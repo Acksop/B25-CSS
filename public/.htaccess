@@ -1,0 +1,27 @@
+
+ErrorDocument 401 /erreurs/erreur.php?num=1
+ErrorDocument 403 /erreurs/erreur.php?num=3
+ErrorDocument 404 /erreurs/erreur.php?num=4
+ErrorDocument 405 /erreurs/erreur.php?num=5
+ErrorDocument 406 /erreurs/erreur.php?num=6
+ErrorDocument 407 /erreurs/erreur.php?num=7
+ErrorDocument 408 /erreurs/erreur.php?num=8
+ErrorDocument 409 /erreurs/erreur.php?num=9
+ErrorDocument 500 /erreurs/erreur.php?num=26
+ErrorDocument 501 /erreurs/erreur.php?num=27
+ErrorDocument 502 /erreurs/erreur.php?num=28
+ErrorDocument 503 /erreurs/erreur.php?num=29
+ErrorDocument 504 /erreurs/erreur.php?num=30
+ErrorDocument 505 /erreurs/erreur.php?num=31
+ErrorDocument 507 /erreurs/erreur.php?num=32
+
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} -f 
+RewriteRule .* - [S=18]
+
+RewriteRule homepage index.php?page=index [L]
+
+DirectoryIndex index.php
+

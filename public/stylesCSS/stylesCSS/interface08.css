@@ -1,0 +1,77 @@
+div.limiteur{
+background-color: black;
+position: absolute;
+top: 0px;
+right: 250px;
+width: 3%;
+height: 1250px;
+z-index: 2;
+}
+div.menu{
+background: #663333;
+background: -moz-linear-gradient(top, #663333 100%, #CCCCCC 10%);
+background: -o-linear-gradient(top, #663333 100%, #CCCCCC 10%);
+background: -webkit(linear,top, bottom, from(#663333), to(#CCCCCC));
+background: -webkit-linear-gradient(top, #663333 100%, #CCCCCC 10%);
+background: -ms-linear-gradient(top, #663333 100%, #CCCCCC 10%);
+background: -linear-gradient(top, #663333 100%, #CCCCCC 10%);
+
+position: absolute;
+margin: 0px;
+padding: 0px 0px 100px 0px;
+top: 0px;
+right: 0px;
+width: 20%;
+height: auto;
+z-index: 4;
+}
+div.sousmenu{
+position: absolute;
+top: 10px;
+left: 0px;
+z-index: 3;
+}
+div.corps{
+position: absolute;
+padding: 0%;
+margin: 0%;
+width: 100%;
+top: 100px;
+right: 0%;
+z-index: 3;
+}
+div.contenu{
+padding: 0px 22% 543px 1%;
+width: 77%;
+}
+div.piedDePage{
+background-color: #cccccc;
+background-image: url(../images/FinDePage-2.png);
+background-repeat: repeat-x;
+height: 500px;
+}
+
+div.article{
+position:relative;
+}
+div.gueuloir{
+position:relative;
+display: none;
+}
+
+div.imagebd{
+background-color: none;
+position: absolute;
+top: 0px;
+right: 270px;
+z-index: 2;
+}
+div.cadreArrondi{
+border-width: 1px;
+}
+div.formulaire{
+display: block;
+}
+div.telechargementEnCours{
+display: none;
+}

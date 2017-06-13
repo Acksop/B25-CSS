@@ -1,0 +1,65 @@
+#menu {
+width: 250px;
+list-style: none;
+}
+#menu li {
+-moz-border-radius: 5 5 5 5;
+background-color: #FFFFFF;
+text-align: left;
+margin: 1em 0em;
+border-color: black;
+border-style: dotted;
+border-width: 1px;
+padding-left: 2em;
+padding-top: 1em;
+float: left;
+width:175px;
+
+}
+#menu li:first-letter{
+font-size: 200%;
+float: left;
+}
+#menu li a{
+background-color: #CCCCCC;
+color: black;
+text-decoration: none;
+}
+#menu li a:hover{
+color: gray;
+}
+#menu li a:focus{
+color: black;
+}
+
+#sousmenu {
+width: 750px;
+list-style: none;
+float: right;
+}
+#sousmenu li{
+width:500px;
+-moz-border-radius: 5 5 0 0;
+background-color: #FFFFFF;
+text-align: left;
+margin 1em 2em;
+border-color:black;
+border-style: solid;
+border-width: 1px;
+padding-left: 2em;
+padding-top: 1em;
+}
+#sousmenu li:first-letter{
+font-size: 150%;
+float: left;
+}
+#sousmenu li:a{
+background-color: #BBBBBB;
+color:black;
+}
+#sousmenu li a:hover{
+color:gray;
+}
+#sousmenu li a:focus{
+color:black;
+}

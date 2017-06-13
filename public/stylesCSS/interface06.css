@@ -1,0 +1,81 @@
+div.limiteur{
+background-color: black;
+position: absolute;
+top: 400px;
+right: 0px;
+width: 100%;
+height: 35px;
+z-index: 2;
+}
+div.menu{
+background-color: #663333;
+position: absolute;
+top: 0px;
+right: 0px;
+width: 100%;
+height: 400px;
+z-index: 3;
+}
+div.logoMenu{
+position: absolute;
+left: 10px;
+}
+div.boutonsMenu{
+position: absolute;
+right: 500px;
+top: 10px;
+}
+div.sousmenu{
+position: absolute;
+top: 330px;
+right: 150px;
+z-index: 3;
+}
+div.corps{
+position: absolute;
+padding: 0%;
+margin: 0%;
+width: 100%;
+top: 450px;
+left: 0px;
+z-index: 3;
+}
+div.contenu{
+padding: 0px 0px 100px 10px;
+width: 75%;
+min-height: 1500px;
+}
+div.piedDePage{
+background-color: #cccccc;
+background-image: url(../images/FinDePage-2.png);
+background-repeat: repeat-x;
+height: 500px;
+}
+div.article{
+position:relative;
+}
+div.gueuloir{
+position:absolute;
+display:block;
+width: 20%;
+top: 450px;
+right: 10px;
+z-index: 4;
+}
+
+div.imagebd{
+background-color: none;
+position: absolute;
+top: 400px;
+right: 270px;
+z-index: 2;
+}
+div.cadreArrondi{
+border-width: 1px;
+}
+div.formulaire{
+display: block;
+}
+div.telechargementEnCours{
+display: none;
+}
