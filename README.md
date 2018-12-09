@@ -2,7 +2,7 @@
 
 Cette coquille vide est la première de mes recherches sur le pattern MVC
 
-Il vient avec une page de préférence permattant de modifier l'interface du site web à la volée
+Il vient avec une page de préférence permettant de modifier l'interface du site web à la volée
 
 Voici comment l'utiliser:
 
