@@ -18,7 +18,7 @@ $header_identifier_url = "l'url de la page proprement dite";
 $header_keywords = "les mots clé de recherche de la page";
 ```
  
- Et, Dans "public > modeles > accesseurs > mapage.accesseur.php" contenant:
+ Et, Dans "public > modeles > vues > mapage.php" contenant:
  ```
  <?php
 function LancerAffichageDuCorps(){
