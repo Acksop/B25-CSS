@@ -27,3 +27,9 @@ echo "mon code HTML";
 ```
 
 Pour le reste c'est a vous de jouer !
+
+Remerciement CSS
+
+> - Gabarit Elephorm CSS [Florens Verschelde](https://fvsch.com/)
+> > http://blog.elephorm.com/apprendre-xhtml-css/
+> > https://fvsch.com/gabarits-html/html/
