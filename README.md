@@ -1,8 +1,9 @@
-# MVC---Procedural
+# MVC---Procedural build for CSS B25 Développeur
 
-Cette coquille vide est la première de mes recherches sur le pattern MVC
+Cette coquille vide fait partie de mes recherches sur le pattern MVC
 
-Il vient avec une page de préférence permettant de modifier l'interface du site web à la volée
+Elle est spécialement dédié aux futurs développeur CSS (FrontEnd) du B25 [https://besançon25.fr].
+En effet elle vient avec une page de préférence permettant de modifier l'interface du site web à la volée
 
 Voici comment l'utiliser:
 
@@ -25,6 +26,11 @@ function LancerAffichageDuCorps(){
 echo "mon code HTML";
 }
 ```
+
+Les développeur CSS qui veulent implémenter de nouvelles variations d'interface peuvent tout à fait créer de nouvelles pages en récupérant l'intégralité des pages HTML de la plate-forme alpha.
+Dans quelques temps je mettrait a disposition des exemples de pages en pure HTML avec les différents éléments dont le B25 use.
+
+N'hésitez pas à m'envoyer un courriel ou lancer une issue.
 
 Pour le reste c'est a vous de jouer !
 
