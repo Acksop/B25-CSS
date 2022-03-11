@@ -1,0 +1,264 @@
+body{
+	background-color: gray !important;
+	color: black !important;
+}
+div.piedDePage{
+	background-color: lightgray;
+}
+.contenuEnCadre{
+	background-color: gray;
+}
+.bg-overlay {
+	background: rgba(0, 0, 0, 0.5) !important;
+	opacity: .5 !important;
+}
+/*a{
+	color: darkslategray !important;
+}
+a:visited{
+	color: darkorchid !important;
+}*/
+section {
+	background-color: white !important;
+}
+.background-white{
+	background-color: white !important;
+}
+.background-black{
+	background-color: black !important;
+}
+.menu-icone > i{
+	color: black;
+}
+.menu-titre{
+	color: black;
+}
+.sousmenu-titre, .sousmenu-titre > a:visited{
+	color: black !important;
+}
+.sousmenu-icone{
+	color: black;
+}
+
+.B25-alert{
+	background-color: white;
+	color: darkblue;
+}
+.btn_cookie{
+	border: 1px solid black;
+	background-color: white;
+	color: darkblue;
+}
+.btn_cookie:hover{
+	background-color: gray;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+	border: black 0px solid;
+}
+
+.B25-alert{
+	color: darkblue;
+}
+.btn_cookie{
+	color: darkblue;
+}
+.btn_cookie:hover{
+	background-color: gray;
+}
+
+img{
+	border: black 0px solid;
+}
+.B25-cadre{
+	background-color: rgba( 255,255,255, 0.8);
+}
+.B25-cadre-inverse{
+	background-color: rgba( 192,192,192, 0.8);
+	border-color: gray;
+}
+.tweet{
+	border: 1px solid black;
+}
+.tweetReset{
+	color: red;
+}
+.tweetReset:hover{
+	background-color: beige;
+}
+.btn_modif{
+	border: 1px solid black;
+}
+.btn_modif_preferences{
+	border: 1px solid black;
+}
+.btn_dossiers{
+	border: 1px solid black;
+	
+}
+input[type="radio"].preferences-radio:checked + label{
+    border: 10px solid white;
+}
+
+input[type="radio"].preferences-text + label {
+    border: 10px solid gray;
+}
+input[type="radio"].preferences-text:checked + label{
+    border: 10px solid white;
+}
+input[type="radio"].preferences-taille + label {
+    border: 10px solid white;
+}
+
+/*PROPRIETES DES CONTENEURS*/
+
+div.conteneurArticle h2.legende{
+	color: white;
+	background-color: gray;
+}
+div.conteneurArticleInterieur{
+	background-color: gray;
+}
+div.conteneurAlbumInterieur{
+	background-color: gray;
+	border: 1px solid gray;
+}
+div.conteneurGrand h2.legende{
+	border-color: #FFDDDD;
+	color: white;
+	background-color: gray;
+}
+div.conteneurGrandInterieur{
+	background-color: gray;
+	border: 1px solid #FFDDDD;
+}
+div.conteneurGrandInterieur h3.legende{
+	color: white;
+	background-color: gray;
+}
+div.conteneur{
+	border: 1px dotted #FFDDDD;
+}
+div.conteneur h2.legende{
+	color: white;
+	background-color: gray;
+}
+div.conteneurInterieur{
+	background-color: gray;
+}
+div.conteneurInterieur h3.legende{
+	color: white;
+	background-color: gray;
+}
+div.conteneurPetit h2.legende{
+	color: white;
+	background-color: gray;
+}
+div.conteneurPetitInterieur{
+	background-color: gray;
+	border: 1px solid #FFDDDD;
+}
+div.conteneurPetitInterieur h3.legende{
+	color: white;
+	background-color: gray;
+}
+
+.utilisateurs{
+	border: 1px dotted #FFDDDD;
+	background-color: gray;
+}
+.utilisateursInverse{
+	border: 1px dotted #FFDDDD;
+	background-color: gray;
+}
+.bloc_murUtilisateur{
+	background-color: gray;
+	border: 1px dotted #FFDDDD;
+}
+
+
+
+/*PROPRIETES DES ECRITURES*/
+
+h1.utilisateurs{
+	background-color: gray;
+}
+h2.utilisateurs{
+	background-color: gray;
+}
+h3.utilisateurs{;
+	background-color: gray;
+}
+h1.utilisateursInverse{
+	background-color: gray;
+}
+h2.utilisateursInverse{
+	background-color: gray;
+}
+h3.utilisateursInverse{
+	background-color: gray;
+}
+a.lien_back:hover{
+	color:lightblue;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+}
+table.utilisateurs td{
+	border: 1px dotted #FFDDDD;
+	background-color: gray;
+}
+td.titreTableau{
+	border: 1px solid #FFDDDD;
+	background-color: gray;
+}
+
+td.utilisateurs{
+	border: 1px dotted #FFDDDD;
+	background-color: gray;
+}
+td.utilisateursInverse{
+	border: 1px dotted #FFDDDD;
+	background-color: gray;
+}
+td.ecriture{
+	border: 1px dotted #FFDDDD;
+	background-color: gray;
+}
+td.ecritureInverse{
+	border: 1px dotted #FFDDDD;
+	background-color: gray;
+}
+td.gris{
+	background-color: #CCCCCC;
+}
+td.fondgris{
+	background-color: #CCCCCC;
+}
+td.breves{
+	background-color: #666666;
+}
+td.breve{
+	border: 1px solid #DDDDDD;
+	background-color: #CCCCCC;
+}
+
+p.utilisateurs{
+	border: 1px dotted #FFDDDD;
+	background-color: gray;
+}
+p.lettrineInverse:first-letter {
+	background-color: black;
+	color: white;
+}
+span.fluo{ background:#ffff00; }
+
+
+ul.preferences{
+	border: 1px solid #FFDDDD;
+	background-color: gray;
+}
+.form-control {
+	color: #212529;
+}

@@ -1,0 +1,375 @@
+/*
+  CUSTOM STYLE FOR NAVBAR
+ */
+body{
+    background-color: #FFF !important;
+}
+/*header{
+    visibility: hidden !important;
+}*/
+
+#nav {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+.navbar {
+    visibility: visible;
+    padding-left: 325px !important;
+    position: absolute !important;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+.nav-link{
+    visibility: visible;
+    position: relative;
+    padding: 1rem 0rem;
+    text-decoration: none;
+}
+.navbar-brand{
+    visibility: visible;
+    position: relative;
+    top: -250px;
+    transition: all 0.5s ease-out;
+}
+
+.nav-link::before {
+    visibility: visible;
+    content: '';
+    position: absolute;
+    background-color: rosybrown;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    opacity: 0.5;
+    transition: all 0.25s ease-in-out;
+}
+.nav-link:hover::before {
+    visibility: visible;
+    height:120%;
+    border-top: 10px solid darkred;
+}
+
+/*
+  CUSTOM STYLE FOR TITLE AND LINKS
+ */
+
+
+.link::before {
+    content: '';
+    position: absolute;
+    background-color: rosybrown;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 75%;
+    opacity: 0.5;
+    transition: all 0.25s ease-in-out;
+}
+.link:hover::before {
+    width: 100%;
+}
+
+
+
+
+.h1-titre-article{
+    display:block;
+    position:relative;
+    font-variant:small-caps;
+    font-size:xx-large;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+.h2-titre-footer{
+    display:block;
+    position:relative;
+    font-variant:small-caps;
+    font-size:x-large;
+    color: black;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+.h3-titre-explications{
+    display:block;
+    position:relative;
+    font-variant:small-caps;
+    font-size:large;
+    color: black;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+.h4-titre{
+    display:block;
+    position:relative;
+    font-variant:small-caps;
+    font-size:medium;
+    color: black;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+.h5-titre-footer-link{
+    display:block;
+    position:relative;
+    font-variant:small-caps;
+    font-size:small;
+    color: black;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+.p{
+    font-size:smaller !important;
+}
+
+/*
+
+
+    OVERLAY-TITLE-COLORS From:
+
+ .titre-article::before{
+    content: '';
+    position: absolute;
+    background-color: rosybrown;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    opacity: 0.5;
+}
+
+
+ */
+
+.overlay-title-max::before{
+    content: '';
+    position: absolute;
+    background-color: rosybrown;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 75%;
+    opacity: 0.5;
+}
+
+.overlay-title::before{
+    content: '';
+    position: absolute;
+    background-color: rosybrown;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    opacity: 0.5;
+}
+
+.overlay-title-mini::before{
+    content: '';
+    position: absolute;
+    background-color: rosybrown;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    opacity: 0.5;
+}
+
+.overlay-bordeau::before{
+    background-color: rosybrown;
+}
+.overlay-greenlantern::before{
+    background-color: greenyellow;
+}
+.overlay-snowtornado::before{
+    background-color: whitesmoke;
+}
+.overlay-yellowclay::before{
+    background-color: yellow;
+}
+.overlay-orangeagent::before{
+    background-color: orange;
+}
+.overlay-purplehaze::before{
+    background-color: mediumslateblue;
+}
+.overlay-blueshield::before{
+     background-color: deepskyblue;
+ }
+.overlay-blueforge::before{
+      background-color: blue;
+}
+.overlay-pinkypig::before{
+    background-color: salmon;
+}
+.overlay-uniquebrown::before{
+     background-color: chocolate;
+}
+
+
+
+/*
+  CUSTOM STYLE FOR GUEULOIR
+ */
+.gueuloir-tooltip {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    background-color: darkred;
+    margin-bottom: 20px;
+}
+.gueuloir-tooltip::after {
+    content: '';
+    position: absolute;
+    left: calc(50% - 15px);
+    bottom: -30px;
+    color: darkred;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 30px solid darkred;
+}
+.tooltip-bordeau::after{
+    border-top: 30px solid rosybrown;
+}
+.tooltip-greenlantern::after{
+    border-top: 30px solid greenyellow;
+}
+.tooltip-snowtornado::after{
+    border-top: 30px solid whitesmoke;
+}
+.tooltip-yellowclay::after{
+    border-top: 30px solid yellow;
+}
+.tooltip-orangeagent::after{
+    border-top: 30px solid orange;
+}
+.tooltip-purplehaze::after{
+    border-top: 30px solid mediumslateblue;
+}
+.tooltip-blueshield::after{
+    border-top: 30px solid deepskyblue;
+}
+.tooltip-blueforge::after{
+    border-top: 30px solid blue;
+}
+.tooltip-pinkypig::after{
+    border-top: 30px solid salmon;
+}
+.tooltip-uniquebrown::after{
+    border-top: 30px solid chocolate;
+}
+
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+
+.dropdown-menu {
+    margin-top: 0;
+}
+.dropdown-menu .dropdown-toggle::after {
+    vertical-align: middle;
+    border-left: 4px solid;
+    border-bottom: 4px solid transparent;
+    border-top: 4px solid transparent;
+}
+.dropdown-menu .dropdown .dropdown-menu {
+    left: 100%;
+    top: 0%;
+    margin:0 20px;
+    border-width: 0;
+}
+
+.dropdown-menu > li a:hover,
+.dropdown-menu > li.show {
+    background: #007bff;
+    color: white;
+}
+.dropdown-menu > li.show > a{
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .dropdown-menu .dropdown .dropdown-menu {
+        margin:0;
+        border-width: 1px;
+    }
+}
+
+/*
+
+FOR COLORS
+
+ */
+.bg-bordeau{
+    background-color: darkred;
+}
+.bg-beaujolais{
+    background-color: rosybrown;
+}
+
+.bg-greenlantern{
+    background-color: greenyellow;
+}
+.bg-snowtornado{
+    background-color: whitesmoke;
+}
+.bg-yellowclay{
+    background-color: yellow;
+}
+.bg-orangeagent{
+    background-color: orange;
+}
+.bg-purplehaze{
+    background-color: mediumslateblue;
+}
+.bg-blueshield{
+    background-color: deepskyblue;
+}
+.bg-blueforge{
+    background-color: blue;
+}
+.bg-pinkypig{
+    background-color: salmon;
+}
+.bg-uniquebrown{
+    background-color: chocolate;
+}
+
+/*
+
+    FOR TEXT STYLE
+
+ */
+.text-small{
+    font-size:small;
+}
+
+/*
+
+    FOR ORIGINAL LINKS
+
+ */
+a { color: #0000FF !important;}
+:link { color: #0000EE !important; }
+:visited { color: #551A8B !important; }
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+
+code {
+    color: #B06AB3;
+    background: #fff;
+    padding: 0.1rem 0.2rem;
+    border-radius: 0.2rem;
+}

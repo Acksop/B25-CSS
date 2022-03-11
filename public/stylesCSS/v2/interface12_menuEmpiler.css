@@ -1,0 +1,38 @@
+#limiteur {
+top: 0px !important ;
+}
+#sous-menu {
+top: 15px !important ;
+}
+#menu {
+position: relative !important;
+background: none !important;
+top: -10px !important;
+height: auto !important;
+}
+#nav {
+top: 25px !important ;
+}
+#contenu {
+top: 0px !important ;
+padding-top: 200px;
+}
+#gueuloir {
+top: 25px !important ;
+}
+#corps{
+top: 0px !important ;
+}
+#en-tete{
+top: -450px !important;
+}
+#breadcrumbs {
+    top: 5px !important ;
+}
+#btn_depilerMenu {
+    top: 26px !important;
+}
+
+#btn_empilerMenu {
+    top: 26px !important;
+}

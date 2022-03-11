@@ -1,31 +1,165 @@
 body{
-background-color: #848484;
+/*background-color: #818181;*/
+/*background-color: #808080;*/
+/*background-color: #848484;*/
 }
 
-.tweet{
-	border: 1px solid black;
+div.imagebd > img {
+	max-width: none !important;
+	width: 100% !important;
+	height: 100% !important;
+	overflow: hidden;
+}
+
+/* Switching box model for all elements */
+* {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+video{
+	max-width: 800px;
+}
+
+.fromBottom {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.toBottom {
+	display: block;
+	position: absolute;
+	width: 100%;
+	margin: auto;
+	bottom: 0px;
+}
+
+.B25-alert{
+	display: block;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 150px;
+	z-index: 101;
+	padding-top: 2rem;
 	
 }
-.btn_modif{
-	border: 1px solid black;
+.btn_cookie{
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 11px;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+/*Box sizing for GoogleMap Application*/
+#map{
+	width: 90% !important;
+}
+
+/** Conteneur Principal **/
+#contenu{
+	width: 100%;
+	margin: auto;
+}
+#contenu-principal{
+	width: 100%;
+}
+
+/*Conteneur des blocs de base de la Version3 */
+
+.B25-cadre{
+border-color: silver;
+border-style: solid;
+border-width: 5px;
+-webkit-border-radius: 7px;
+-moz-border-radius: 7px;
+border-radius: 7px;
+margin: 1px;
+padding: 15px;
+}
+.B25-cadre-inverse{
+border-style: solid;
+border-width: 5px;
+-webkit-border-radius: 7px;
+-moz-border-radius: 7px;
+border-radius: 7px;
+margin: 1px;
+padding: 15px;
+}
+/*règles spécifique à un types nouveau de cadre n'étant pas pris en charge par la spécifcation des navigateur en 2013*/
+table.arrondisCentrer{
+position: relative;
+display: block;
+margin: auto;
+}
+/*conteneur des propriétes du mur des artisans */
+
+.table-mobile{
+	display: table;
+	width: auto;
+	text-align: center;
+}
+.table-mobile-row{
+	display: table-row;
+	width: auto;
+	margin: auto auto;
+	align: center;
+}
+
+.table-mobile-hr-row{
+	display:table-row-group;
+}
+
+.table-mobile-cell{
+	display:table-cell;
+
+	min-width: 60px;
+	vertical-align: top;
+	align: center;
+	margin: auto auto;
+}
+.colspan-3{
+	column-span: 3;
+	width: 100%;
+}
+
+/* propriétés du conteneur du gueuloir*/
+
+.permanent-table{
+	display: table-cell;
+	vertical-align: top;
+}
+
+.permanent-gueuloir{
+	position:relative;
+	top: 25px;
+	padding: 25px 10px;
+	margin: 50px 10px;
+	width: 275px;
+	z-index: 50;
+}
+
+/*conteneur des formulaires*/
+
+form.membres label{
+	font-size: 10px;
 	width: 200px;
-	cursor: pointer;
 }
-.btn_modif_preferences{
-	border: 1px solid black;
-	width: 500px;
-	cursor: pointer;
-}
-.btn_dossiers{
-	border: 1px solid black;
-	width: 300px;
-	height: 75px;
-	cursor: pointer;
-	
+/*.tweet{
+	width: 100%;
+}*/
+.tweet:hover{
+	background-color: beige;
+
 }
 .tweetReset{
 	border: 0px;
-	color: red;
 	font-weight: bold;
 }
 .tweetReset:hover{
@@ -34,19 +168,81 @@ background-color: #848484;
 .btn{
 	cursor: pointer;
 }
-form.membres label{
-	float: inline;
-	font-size: 10px;
-	width: 200px;
+.btn_modif{
+	width: 100%;
+	cursor: pointer;
+}
+.btn_modif_preferences{
+	padding: 3px;
+	width: 90%;
+	cursor: pointer;
+}
+.btn_dossiers{
+	width: 300px;
+	height: 75px;
+	cursor: pointer;
+	
 }
 
+input[type="radio"].preferences-radio {
+    display:none;
+}
+input[type="radio"].preferences-radio + label {
+    display:inline-block;
+    cursor:pointer;
+    -webkit-transition: all 700ms ease-in-out;
+    -moz-transition: all 700ms ease-in-out;
+    -o-transition: all 700ms ease-in-out;
+    -ms-transition: all 700ms ease-in-out;
+    transition: all 700ms ease-in-out;
+}
+
+input[type="radio"].preferences-text {
+    display:none;
+}
+input[type="radio"].preferences-text + label {
+    display:inline-block;
+    cursor:pointer;
+    width: 150px;
+    text-decoration: line-through;
+    -webkit-transition: all 700ms ease-in-out;
+    -moz-transition: all 700ms ease-in-out;
+    -o-transition: all 700ms ease-in-out;
+    -ms-transition: all 700ms ease-in-out;
+    transition: all 700ms ease-in-out;
+}
+input[type="radio"].preferences-text:checked + label{
+    text-decoration: none;
+}
+input[type="radio"].preferences-taille {
+    display:none;
+}
+input[type="radio"].preferences-taille + label {
+    display:inline-block;
+    cursor:pointer;
+    width: 53px;
+	padding: 3px 0px 0px 3px;
+	margin: 0px;
+    text-decoration: line-through;
+    -webkit-transition: all 700ms ease-in-out;
+    -moz-transition: all 700ms ease-in-out;
+    -o-transition: all 700ms ease-in-out;
+    -ms-transition: all 700ms ease-in-out;
+    transition: all 700ms ease-in-out;
+}
+input[type="radio"].preferences-taille:checked + label{
+    border: 10px solid #ccc;
+    text-decoration: none;
+}
+
+/*PROPRIETES DES CONTENEURS*/
 
 div.conteneurGrandArticle{
 
 	display:table;
-	column-width: 960;	
+	column-width: 960px;
 	width: 950px;
-	margin: 15 auto;
+	margin: 15px auto;
 	position: relative;
 	padding: 10px;
 	border: 1px dotted #FFDDDD;
@@ -72,94 +268,70 @@ div.conteneurArticle{
 div.conteneurArticle h2.legende{
 	margin: -23px 0px 0px 60px;
 	padding: 0px 10px 0px 10px;
-	border-style: none;
-	color: white;
-	background-color: grey;
+	border-width: 1px;
+	border-style: dotted;
 	height: 25px;
-	width: 220px;
+	width: 100%;
 	font-family: Verdana,Arial,serif;
 	text-align: left;
 }
 div.conteneurArticleInterieur{
-	width: 280px;
-	margin: 15 auto;
-	background-color: grey;
+	/*width: 100%;*/
+	margin: 15px auto;
 	padding: 10px;
 	border: 1px solid #FFDDDD;
 	text-align: left;
 }
 div.conteneurAlbumInterieur{
-	width: 250px;
-	margin: 15 auto;
-	background-color: silver;
+	/*width: 100%;*/
+	margin: 15px auto;
 	padding: 10px;
-	border: 1px solid #grey;
 	text-align: left;
 }
-div.conteneurGrandInterieur h3.legende{
-	margin: -23px 0px 0px 70px;
-	padding: 0px 10px 0px 10px;
-	border-style: none;
-	color: white;
-	background-color: grey;
-	height: 25px;
-	width: 200px;
-	font-family: Verdana,Arial,serif;
-	text-align: left;
-}
-
 div.conteneurGrand{
 	clear: left;
 	width: 950px;
-	margin: 15 auto;
+	margin: 5px auto;
+	margin-bottom: 25px;
 	position: relative;
 	padding: 10px;
-	border: 1px dotted #FFDDDD;
 	text-align: left;
 }
 div.conteneurGrand h2.legende{
-	margin: -23px 0px 0px 60px;
-	padding: 0px 10px 0px 10px;
-	border-style: none;
-	color: white;
-	background-color: gray;
-	height: 25px;
-	width: 500px;
+	margin: -20px 0px 5px 60px;
+	padding: 0px 0px 10px 10px;
+	border-width: 1px;
+	border-style: dotted;
+	height: 35px;
+	width: auto;
 	font-family: Verdana,Arial,serif;
 	text-align: left;
 }
 div.conteneurGrandInterieur{
 	width: 880px;
-	margin: 15 auto;
-	background-color: gray;
+	margin: 15px auto;
 	padding: 10px;
-	border: 1px solid #FFDDDD;
 	text-align: left;
 }
 div.conteneurGrandInterieur h3.legende{
 	margin: -23px 0px 0px 70px;
 	padding: 0px 10px 0px 10px;
 	border-style: none;
-	color: white;
-	background-color: gray;
 	height: 25px;
-	width: 300px;
+	width: auto;
 	font-family: Verdana,Arial,serif;
 	text-align: left;
 }
 div.conteneur{
 	width: 550px;
-	margin: 10 auto;
+	margin: 10px auto;
 	padding: 10px;
-	border: 1px dotted #FFDDDD;
 	text-align: left;
 }
 div.conteneur h2.legende{
 	margin: -23px 0px 0px 60px;
 	padding: 0px 10px 0px 10px;
 	border-style: none;
-	color: white;
-	background-color: gray;
 	height: 25px;
 	width: 300px;
 	font-family: Verdana,Arial,serif;
@@ -167,8 +339,7 @@ div.conteneur h2.legende{
 }
 div.conteneurInterieur{
 	width: 530px;
-	margin: 15 auto;
-	background-color: gray;
+	margin: 15px auto;
 	padding: 10px;
 	border: 1px solid #FFDDDD;
 	text-align: left;
@@ -177,8 +348,6 @@ div.conteneurInterieur h3.legende{
 	margin: -23px 0px 0px 70px;
 	padding: 0px 10px 0px 10px;
 	border-style: none;
-	color: white;
-	background-color: gray;
 	height: 25px;
 	width: 250px;
 	font-family: Verdana,Arial,serif;
@@ -187,7 +356,7 @@ div.conteneurInterieur h3.legende{
 
 div.conteneurPetit{
 	width: 400px;
-	margin: 10 auto;
+	margin: 10px auto;
 	padding: 10px;
 	border: 1px dotted #FFDDDD;
 	text-align: left;
@@ -196,8 +365,6 @@ div.conteneurPetit h2.legende{
 	margin: -23px 0px 0px 60px;
 	padding: 0px 10px 0px 10px;
 	border-style: none;
-	color: white;
-	background-color: gray;
 	height: 25px;
 	width: 220px;
 	font-family: Verdana,Arial,serif;
@@ -205,8 +372,7 @@ div.conteneurPetit h2.legende{
 }
 div.conteneurPetitInterieur{
 	width: 380px;
-	margin: 15 auto;
-	background-color: gray;
+	margin: 15px auto;
 	padding: 10px;
 	border: 1px solid #FFDDDD;
 	text-align: left;
@@ -215,8 +381,6 @@ div.conteneurPetitInterieur h3.legende{
 	margin: -23px 0px 0px 70px;
 	padding: 0px 10px 0px 10px;
 	border-style: none;
-	color: white;
-	background-color: gray;
 	height: 25px;
 	width: 250px;
 	font-family: Verdana,Arial,serif;
@@ -228,152 +392,123 @@ div.conteneurPetitInterieur h3.legende{
  width: 700px;
  margin: 10px auto;
  position: relative;
- height: 1000px;
+ min-height: 1000px;
  overflow: hidden;
  }
 
 .utilisateurs{
-	border: 1px dotted #FFDDDD;
-	background-color: gray;
+	padding: 0.75rem;
 }
 .utilisateursInverse{
-	border: 1px dotted #FFDDDD;
-	background-color: silver;
+	padding: 0.75rem;
+}
+#bloc_media_connexe{
+	display: inline-block;
+	float: left;
+	margin-bottom: 15px;
+}
+#bloc_sonore{
+	position: relative;
+	display: inline-block;
+	float: left;
+	width: 320px;
+	margin-bottom: 15px;
+}
+#bloc_video{
+	position: relative;
+	display: inline-block;
+	float: right;
+	right: 50px;
+	width: 320px;
+	margin-bottom: 15px;
+}
+#bloc_image{
+	display: block;
+	clear: both;
+	
 }
 .bloc_murUtilisateur{
-	position:relative;
-	left:25px;
-}
-.murUtilisateurs{
-	border: 1px dotted #FFDDDD;
-	background-color: gray;
 	display:block;
-	float:center;
+	position:relative;
+	left: 25px;
+	border: 1px dotted #FFDDDD;
 	width:100%;
-	margin: 0 5 5 0;
-	padding: 0 2 2 0;
+	margin: 5px;
+	padding: 2px;
 }
 
-h1.utilisateurs{
-	border: 1px dotted #FFDDDD;
-	background-color: gray;
-}
-h2.utilisateurs{
-	border: 1px dotted #FFDDDD;
-	background-color: gray;
-}
-h3.utilisateurs{
-	border: 1px dotted #FFDDDD;
-	background-color: gray;
-}
-h1.utilisateursInverse{
-	border: 1px dotted #FFDDDD;
-	background-color: silver;
-}
-h2.utilisateursInverse{
-	border: 1px dotted #FFDDDD;
-	background-color: silver;
-}
-h3.utilisateursInverse{
-	border: 1px dotted #FFDDDD;
-	background-color: silver;
-}
-a.info{
-    position: relative; 
-    z-index: 24;
-    color: black;
-    text-decoration: none
-}
 
-a.info:hover{
-	z-index: 25;
+
+/*PROPRIETES DES ECRITURES*/
+a.lien_back{
+	text-decoration: none;
 }
-a.info span{
-	display: none;
-}
-a.info:hover span{
-	display: block;
-	position: absolute;
-	top: -15em; left: 10em; width:25em; height: 20em;
-	border: 1px solid #663333;
-	background-color: #FFFFFF;
-	color: #000000;
-	text-align: justify;
-	font-weight: none;
-	padding: 1px;
+a.lien_back:hover{
+	text-decoration: none;
+	cursor: pointer;
 }
 table.utilisateurs td{
-	border: 1px dotted #FFDDDD;
-	background-color: gray;
 	padding: 0px 10px 0px 10px;
 	margin: 0px 10px 0px 10px;
 	text-align: center;
 }
 td.titreTableau{
-	border: 1px solid #FFDDDD;
-	background-color: gray;
 	padding: 5px 10px 5px 10px;
 	text-align: right;
-	color: white;
-	width: 250px;
+	min-width: 250px;
 }
 
 td.utilisateurs{
-	border: 1px dotted #FFDDDD;
-	background-color: gray;
 	padding: 0px 10px 0px 10px;
 	margin: 0px 10px 0px 10px;
 	text-align: center;
 }
 td.utilisateursInverse{
-	border: 1px dotted #FFDDDD;
-	background-color: silver;
 	padding: 0px 10px 0px 10px;
 	margin: 0px 10px 0px 10px;
 	text-align: center;
 }
 td.ecriture{
-	border: 1px dotted #FFDDDD;
-	background-color: gray;
 	padding: 0px 10px 0px 10px;
 	margin: 0px 10px 0px 10px;
 	text-align: left;
 }
 td.ecritureInverse{
-	border: 1px dotted #FFDDDD;
-	background-color: silver;
 	padding: 0px 10px 0px 10px;
 	margin: 0px 10px 0px 10px;
 	text-align: left;
 }
 td.gris{
-	background-color: #CCCCCC;
 	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
 	width: 5px;
 	height: 5px;
 }
-td.fondgris{
-	background-color: #CCCCCC;
+td.breve{
+	min-height: 1000px;
 }
-td.articles{
-	background-color: #666666;
+p{
+	overflow-wrap: break-word;
 }
-td.article{
-	border: 1px solid #DDDDDD;
-	background-color: #CCCCCC;
-	height: 1000px;
-}
+
 p.utilisateurs{
-	border: 1px dotted #FFDDDD;
-	background-color: gray;
 	padding: 0px 10px 0px 10px;
 	margin: 0px 10px 0px 10px;
 	text-align: center;
 	float: left;
 }
+p.lettrine:first-letter {
+    position: relative;
+    top: 0px;
+    font-size: 1.3em;
+}
+p.lettrineInverse:first-letter {
+    position: relative;
+    top: 0px;
+    font-size: 1.3em;
+}
 p.date{
-	font-style: underline;
+	font-style: italic;
 }
 p.post{
 	font-variant: small-caps;
@@ -387,15 +522,19 @@ p.TchatSuppression{
 }
 p.titre{
 	font-variant: small-caps;
-	width: 150px;
+	width: 95%;
+}
+p.definition{
+	width: 100%;
+	padding: 10px;
 }
 p.titreDossier{
-	width: 500px;
+	width: 100%;
 	text-align: center;
 	font-variant: small-caps;
 }
 p.corpsDossier{
-	width: 730px;
+	width: 100%;
 }
 p.sous-titre{
 	font-style: italic;
@@ -408,22 +547,18 @@ p.justifier { text-align: justify; }
 span.gras { font-weight: bold; }
 span.italique {font-style: italic; }
 span.souligne {text-decoration: underline; }
-span.fluo{ background:#ffff00; }
 span.titre{	font-variant: small-caps;}
-img { border: #000000 0px solid; }
 
-#article li {
+
+#breve li {
 	text-align: left;
 	list-style: square;
 }
 ul{
-  	list-style-position: inside;
   	padding:0 0 0 0;
 	margin: 3px 0px 3px 10px;
 }
 ul.preferences{
-	border: 1px solid #FFDDDD;
-	background-color: gray;
 	width: 860px;
 	text-align: left;
 	margin: 10px;
@@ -433,3 +568,27 @@ ul.normal{ list-style-type: disc; }
 ul.numeros{ list-style-type: decimal; }
 ul.lettres{ list-style-type: lower-alpha; }
 
+.bg-image-full {
+  width:110%;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.form-control {
+	display: block;
+	width: 100%;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	background-color: #fff;
+	background-clip: padding-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}

@@ -1,0 +1,109 @@
+.b25-scene {
+    visibility: visible;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border: 1px solid #CCC;
+    margin: 25px;
+    perspective: 600px;
+    z-index:275;
+}
+
+.b25-link-button {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    z-index: 275;
+}
+
+.left__btn{
+    display:inline-block;
+    float:left;
+    width: 100px;
+    height: 100%;
+    /*background: hsla(  0, 100%, 50%, 0.7);*/
+    z-index:275;
+}
+.front__btn{
+    display:inline-block;
+    float:left;
+    width: 100px;
+    height: 100%;
+    /*background: hsla(  0, 100%, 50%, 0.7);*/
+    z-index:275;
+}
+.right__btn{
+    display:inline-block;
+    float:left;
+    width: 100px;
+    height: 100%;
+    /*background: hsla(  0, 100%, 50%, 0.7);*/
+    z-index:275;
+}
+
+.b25-cube {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    transform-style: preserve-3d;
+    transform: translateZ(-150px);
+    transition: transform 1s;
+    z-index:275;
+}
+
+.b25-cube.show-front  { transform: translateZ(-100px) rotateY(   0deg); }
+.b25-cube.show-right  { transform: translateZ(-100px) rotateY( -90deg); }
+.b25-cube.show-back   { transform: translateZ(-100px) rotateY(-180deg); }
+.b25-cube.show-left   { transform: translateZ(-100px) rotateY(  90deg); }
+.b25-cube.show-top    { transform: translateZ(-100px) rotateX( -90deg); }
+.b25-cube.show-bottom { transform: translateZ(-100px) rotateX(  90deg); }
+
+.cube__face {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    /*border: 2px solid black;*/
+    line-height: 300px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.cube__face--front  {
+    background: hsla(  0, 100%, 50%, 0.7);
+    background: no-repeat center/100% url(https://besancon25.fr/images/Cube/logo_FR.png);
+}
+.cube__face--right  {
+    background: hsla( 60, 100%, 50%, 0.7);
+    background: no-repeat center/100% url(https://besancon25.fr/images/Cube/logo_NET.png);
+}
+.cube__face--back   {
+    background: hsla(120, 100%, 50%, 0.7);
+    background: no-repeat center/100% url(https://besancon25.fr/images/Cube/logo_BIZ.png);
+}
+.cube__face--left   {
+    background: hsla(180, 100%, 50%, 0.7);
+    background: no-repeat center/100% url(https://besancon25.fr/images/Cube/logo_COM.png);
+}
+.cube__face--top    {
+    background: hsla(240, 100%, 50%, 0.7);
+    background: no-repeat center/100% url(https://besancon25.fr/images/Cube/logo_BIZ.png);
+}
+.cube__face--bottom {
+    background: hsla(300, 100%, 50%, 0.7);
+    background: no-repeat center/100% url(https://besancon25.fr/images/Cube/logo_BIZ.png);
+}
+
+.cube__face--front  { transform: rotateY(  0deg) translateZ(150px); }
+.cube__face--right  { transform: rotateY( 90deg) translateZ(150px); }
+.cube__face--back   { transform: rotateY(180deg) translateZ(150px); }
+.cube__face--left   { transform: rotateY(-90deg) translateZ(150px); }
+.cube__face--top    { transform: rotateX( 90deg) translateZ(150px); }
+.cube__face--bottom { transform: rotateX(-90deg) translateZ(150px); }
+
+label { margin-right: 10px; }

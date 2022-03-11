@@ -1,0 +1,13 @@
+/*
+ * NoGray JavaScript Library
+ *
+ * Copyright (c), All right reserved
+ * Gazing Design - http://www.NoGray.com
+ * http://www.nogray.com/license.php
+ */
+ 
+
+.ng-comp-hidden {display:none;
+	position:absolute;
+	top:auto; left:auto;
+	z-index:100000;}

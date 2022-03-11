@@ -1,0 +1,137 @@
+.permanent-gueuloir{
+		background-image: url('../../images/background_simple-2.png');
+}
+	
+/* Responsive Navigation styles begin here */
+@media (max-width: 767px) {
+	div.entete {
+		height: 500px !important;
+		margin: 0px;
+		padding: 150px auto 0px auto;
+		width: 100%;
+	}
+	div.logoMenu{
+		position: relative;
+		left: 0px !important;
+		right: 0px !important;
+		top: 100px !important;
+	}
+	.GenerationPage{
+		display: none;
+	}
+	#menu{
+		width: 100% !important;
+		z-index: 71;
+	}
+	div.boutonsMenu{
+		position: fixed !important;
+		background: #FFF;
+		right: 0px !important;
+		left: 0px !important;
+		top: 5px !important;
+		width: 100% !important;
+		margin: auto;
+		z-index: 75;
+	}
+	ul.menu{
+		/*background: white;*/
+		display: block;
+	}
+	ul.menu li{
+		display: block;
+		height: 45px;
+		padding: 1px !important;
+		background: #EEE;
+	}
+	ul.menu li a {
+		height:100%;
+		padding: 5px !important;
+		background: #FFF;
+	}
+	#sousmenu{
+		position: fixed;
+		top: 2px;
+		left: -25px;
+		clear: both;
+		width: 80% !important;
+		z-index: 72;
+	}
+	div.sousmenu{
+		position: fixed;
+		top: 2px;
+		clear: both;
+		width: 80% !important;
+		height: 100px;
+		left: -27px;
+	}
+	#sousmenu > li {
+		display: block;
+		width: 100%;
+	}
+	div.limiteur{
+		background-color: black;
+		position: fixed !important;
+		top: 0px !important;
+		left: 0px !important;
+		right: 0px;
+		width: 100% !important;
+		height: 55px !important;
+		z-index: 70;
+	}
+	div.imagebd {
+		position: absolute;
+		top: 450px;
+		left: 0px !important;
+		right: 0px !important;
+		width: 100% !important;
+		height: auto !important;
+		z-index: 2;
+		}
+	div.imagebd img{
+		max-width: 100% !important;
+		height: auto !important;
+	}
+	div.corps{
+		position: absolute;
+		padding: 0px !important;
+		margin: 0px !important;
+		top: 450px;
+		left: 0px;
+		right: 0px;
+		width: 100% !important;
+	}
+	div.contenu{
+		position: relative;
+		display: block;
+		padding: 0px !important;
+		margin: 0px !important;
+		margin-bottom: 85px !important;
+		top: 50px;
+		left: 0px !important;
+		right: 0px !important;
+		width: auto !important;
+	}
+	div.piedDePage{
+		position: relative;
+		top: 450px;
+		height: auto !important;
+	}
+
+	.B25-cadre-inverse{
+		width: 95%;
+	}
+	.table-mobile-cell{
+		display:inline-block !important;
+	}
+	div.sousmenu {
+		top: 0px;
+		right: 0px;
+		z-index: 0;
+	}
+	a.gflag {
+		top: -11px !important;
+		display: block;
+		position: relative;
+	}
+
+}

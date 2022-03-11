@@ -1,0 +1,102 @@
+@media (max-width: 767px) {
+
+	#nav ul {
+
+		/* global styles */
+		position: relative;
+		display: block;
+		left: 0px !important;
+		width: 100% !important;
+		list-style: none;
+		top: 95px;
+	/* translate with hardware acceleration */
+		-webkit-transform: translateZ(0); 
+		-o-transform: translateZ(0);
+		-moz-transform: translateZ(0);
+		-ms-transform: translateZ(0);
+		transform: translateZ(0);
+		
+		-webkit-transition: .4s;
+		-moz-transition: .4s;
+		-ms-transition: .4s;
+		-o-transition: .4s;
+		transition: .4s;
+	}
+	
+
+	/* Theming opened nav */	
+	
+	#nav li {
+		padding: 1px !important;
+		margin: 1px auto !important;
+		width: 95% !important;
+	}
+	#nav a:first-letter{
+		font-size: 200%;
+		float: left;
+	}
+	#nav a {
+		display: block;
+		color: #e6e6fa;
+		background: #fff;
+		margin-bottom: 2px;
+		width: 100%;
+	}
+	#nav a:hover, 
+	#nav a:focus,
+	#nav a:active
+	{
+		background: #eee;
+	}
+	
+	/* Theming closed nav */
+	#nav.is-closed ul {
+		max-height: 0;
+		overflow: hidden;
+	}
+
+	/* Global styling nav button */	
+	#nav > button {
+		display: block;
+		position: absolute;
+		top: 2px;
+		right: 10px;
+		z-index: 73;
+		height: 50px;
+		width: 50px;
+		background-color: white;
+		background-image: url(../images/menu-mobile.png);
+		background-position: center top, center, center bottom;
+		background-repeat: no-repeat;
+		padding: 0;
+		outline: 0;
+		border: 0;
+		cursor: pointer;
+		-webkit-tap-highlight-color:rgba(200,200,200,0);
+		-webkit-transition: .2s;
+		        transition: .2s;
+	}
+	
+	/*  Removing Firefox's dotted outline on button */	
+	#nav > button::-moz-focus-inner {
+		border: 0;
+	}
+	
+	/* Theming opened nav button */	
+	#nav:not(.is-closed) > button {
+		-webkit-transform: rotate(180deg) translateZ(0);
+		        transform: rotate(180deg) translateZ(0);
+		background-position: center, center, center;
+	}
+	
+	
+	/* Hide alternate text except from screen readers */
+	.visually-hidden {
+		position: absolute !important;
+		clip: rect(1px, 1px, 1px, 1px);
+		overflow: hidden;
+		height: 1px;
+		width: 1px;
+	}
+	
+}

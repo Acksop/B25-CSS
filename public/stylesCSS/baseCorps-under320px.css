@@ -1,0 +1,8 @@
+@media ( max-width: 320px ){
+	video{
+		max-width: 200px;
+	}
+	.corps {
+		padding-top: 5rem;
+	}
+}

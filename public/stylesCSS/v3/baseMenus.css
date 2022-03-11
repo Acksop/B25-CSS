@@ -1,0 +1,17 @@
+/************************ MENU DE NAVIGUATIONS PRINCIPAUX **************/
+.h2-menu{
+    display: block; font-size: 1.5em; margin-top: 0.83em; margin-bottom: 0.83em; margin-left: 0; margin-right: 0; font-weight: bold;
+}
+.h3-menu{
+    display: block; font-size: 1.17em; margin-top: 1em; margin-bottom: 1em; margin-left: 0; margin-right: 0; font-weight: bold;
+}
+/*************************** SOUS-MENU (COMPTE-PRÉFÉRENCES-HORLOGE) *******/
+.h2-sousmenu{
+    display: block; font-size: 1.5em; margin-top: 0.83em; margin-bottom: 0.83em; margin-left: 0; margin-right: 0; font-weight: bold;
+}
+.h3-sousmenu{
+    display: block; font-size: 1.17em; margin-top: 1em; margin-bottom: 1em; margin-left: 0; margin-right: 0; font-weight: bold;
+}
+.private-menu{
+    background-color: AntiqueWhite !important;
+}

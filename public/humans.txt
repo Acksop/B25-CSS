@@ -1,0 +1,45 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  Multi-tools-develloper: Emmanuel ROY
+  Site: https://emmanuelroy.name
+  Twitter: Acksop
+  Location: Besançon, France
+
+/* THANKS */
+  Names (& URL): GAINON Nicolas, VENTURI Florian
+
+/* SITE */
+  Standards: PHP3-PHP7, HTML5, CSS3, ECMASCRIPT
+  Components: see ./public/scriptPHP :)
+  Software: Notepad, UltraEdit32, EclipsePDT, ZendStudio, PHPStorm
+  
+  
+
+
+
+                               -o/-
+                               +oo//-
+                              :ooo+//:
+                             -ooooo///-
+                             /oooooo//:
+                            :ooooooo+//-
+                           -+oooooooo///-
+           -://////////////+oooooooooo++////////////::
+            :+ooooooooooooooooooooooooooooooooooooo+:::-
+              -/+ooooooooooooooooooooooooooooooo+/::////:-
+                -:+oooooooooooooooooooooooooooo/::///////:-
+                  --/+ooooooooooooooooooooo+::://////:-
+                     -:+ooooooooooooooooo+:://////:--
+                       /ooooooooooooooooo+//////:-
+                      -ooooooooooooooooooo////-
+                      /ooooooooo+oooooooooo//:
+                     :ooooooo+/::/+oooooooo+//-
+                    -oooooo/::///////+oooooo///-
+                    /ooo+::://////:---:/+oooo//:
+                   -o+/::///////:-      -:/+o+//-
+                   :-:///////:-            -:/://
+                     -////:-                 --//:
+                       --                       -:

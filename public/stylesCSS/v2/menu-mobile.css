@@ -1,0 +1,126 @@
+
+/* Responsive Navigation styles begin here */
+@media (max-width: 767px) {
+	.permanent-gueuloir{
+		width: 100%;
+		padding: 2%;.
+		background-image: url('../../images/background_simple-1.png');
+	}
+	.table-mobile{
+		display: block;
+		width: 100%;
+	}
+	.GenerationPage{
+		display: none;
+	}
+	#en-tete{
+		height: 450px;
+	}
+	#menu{
+		width: 100% !important;
+		z-index: 71;
+	}
+	div.piedDePage{
+		height: auto !important;
+	}
+	div.logoMenu{
+		top: 75px;
+		left: 0px;
+		right: 0px;
+		margin: auto auto;
+	}
+	div.boutonsMenu{
+		position:fixed !important;
+		background: #FFF;
+		right: 0px !important;
+		left: 0px !important;
+		top: 5px !important;
+		width: 100% !important;
+		margin: auto auto;
+		z-index: 75;
+	}
+	ul.menu{
+		background: white;
+		display: block;
+		top: 80px !important;
+		width: 98% !important;
+	}
+	ul.menu li{
+		display: block;
+		width: 100% !important;
+		height: 45px;
+		padding: 2px !important;
+		background: #EEE;
+	}
+	ul.menu li a {
+		height:100%;
+		padding: 5px !important;
+		background: #FFF;
+	}
+	#sousmenu{
+		position: absolute;
+		top: 10px;
+		left: -10px;
+		clear: both;
+		width: 100%;
+		z-index: 72;
+	}
+	div.sousmenu{
+		position: fixed !important;
+		top: 2px !important;
+		left: 2px !important;
+		clear: both;
+		width: 80% !important;
+		height: 100px;
+	}
+	#sousmenu > li {
+		display: block;
+		width: 100%;
+	}
+	div.limiteur{
+		background-color: black;
+		position: fixed !important;
+		top: 0px !important;
+		left: 0px !important;
+		right: 0px !important;
+		width: 100% !important;
+		height: 55px !important;
+		z-index: 40 !important;
+	}
+	div.imagebd img{
+		max-width: 100%;
+		height: auto;
+	}
+	div.corps{
+		position: absolute;
+		padding: 0px !important;
+		margin: 0px !important;
+		top: 500px;
+		clear: both;
+		width: 100% !important;
+	}
+	div.contenu{
+		position: relative;
+		display: block;
+		padding: 0px !important;
+		margin: 0px 0px 185px 0px !important;
+		top: 250px !important;
+		clear: both;
+		right: clear;
+		width: 100% !important;
+	}
+	.B25-cadre-inverse{
+		width: 95%;
+	}
+	.table-mobile-cell{
+		display:inline-block !important;
+	}
+	.block_limiteur_pied {
+		top: 50px;
+	}
+	#contenu {
+		 width: 100% !important;
+	}
+
+}
+

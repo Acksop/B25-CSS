@@ -1,0 +1,230 @@
+<?php
+/**
+ * Smart Link Comptabilité - POUR LES BREVES
+ */
+
+if((isset($_COOKIE['CookieApp_CT']) && $_COOKIE['CookieApp_CT'] == 1)
+    &&
+    (isset($_COOKIE['CookieApp_CT_Hyperlienlinkbucks']) && $_COOKIE['CookieApp_CT_Hyperlienlinkbucks'] == 1)
+) {
+
+    //TODO if not APP-regiepublicitaire on the B25
+
+}
+
+
+
+/**
+ * Pour le comptage des liens des breves
+ */
+
+$link = link_rewrite('traitementComptableLienExterneBreve',true,'AJAX');
+echo <<<EOD
+<script>
+
+    // ajout d'un écouteur d'évènement au lien de la breve
+    var breves = document.getElementsByClassName("span-breve");
+    if(breves !== null){
+        for (var j = 0; j < breves.length; j++) {
+            var id = breves[j].getAttribute('num');
+            var links = breves[j].getElementsByTagName("a");
+            for (var i = 0; i < links.length; i++) {
+                var hrefLink = links[i].getAttribute('href');
+                if (links[i].addEventListener){
+                    links[i].addEventListener("click", function(){
+
+                        var xhr = createXHR();
+                        xhr.onreadystatechange = function(){
+                            if(xhr.readyState == 4){
+                                if(xhr.status == 200){
+                                    console.log(xhr.responseText);
+                                }
+                            }
+                        };
+
+
+                        var params = 'link='+this.getAttribute('href')+'&id='+id;
+                        xhr.open( 'POST' , '$link', true);
+                        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                        //nom d'en-tête interdite https://developer.mozilla.org/fr/docs/Glossaire/Forbidden_header_name
+                        //xhr.setRequestHeader("Content-length", params.length);
+                        //xhr.setRequestHeader("Connection", "close");
+                        //xhr.setRequestHeader("User-Agent", 'B25-useragent.network');
+                        
+                        xhr.send(params);
+
+
+                    }, false);
+                }else{
+                    /*links[i].attachEvent('onclick', LinkComptabilite(hrefLink,id));*/
+                }
+                //links[i].onclick = function() {LinkComptabilite(hrefLink,id)};
+            }
+        }
+    }
+</script>
+EOD;
+/**
+ * Pour l'affichage dans le cas où l'on est l'admin
+ */
+if (isset($_SESSION['type_compte']) && $_SESSION['type_compte'] == 0) {
+    $link = link_rewrite('traitementComptabiliteLienExterneBreve',true,'AJAX');
+    echo <<<EOD
+<script>
+
+    // ajout d'un écouteur d'évènement au lien de la breve
+    var breves = document.getElementsByClassName("span-breve");
+    if(breves !== null){
+        for (var j = 0; j < breves.length; j++) {
+            var id = breves[j].getAttribute('num');
+            var links = breves[j].getElementsByTagName("a");
+            for (var i = 0; i < links.length; i++) {
+                var hrefLink = links[i].getAttribute('href');
+                let xhr = createXHR();
+                xhr.i = i;
+                xhr.j = j;
+
+                xhr.onreadystatechange = function(){
+                    if(xhr.readyState == 4){
+                        if(xhr.status == 200){
+                            breves = document.getElementsByClassName("span-breve");
+                            for (var j = 0; j < breves.length; j++) {
+                                if(j == this.j ){
+                                    links = breves[j].getElementsByTagName("a");
+                                    var spanNode = document.createElement("span");
+
+                                    spanNode.innerHTML = "<span style='background-color:white;border-radius:50%;'> "+xhr.responseText+" </span>";
+                                    for (var i = 0; i < links.length; i++) {
+                                        if(i == this.i ){
+                                            links[i].appendChild(spanNode);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                };
+
+
+                var params = 'link='+hrefLink+'&id='+id;
+                xhr.open( 'POST' , '$link', true);
+                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                //nom d'en-tête interdite https://developer.mozilla.org/fr/docs/Glossaire/Forbidden_header_name
+                //xhr.setRequestHeader("Content-length", params.length);
+                //xhr.setRequestHeader("Connection", "close");
+                //xhr.setRequestHeader("User-Agent", 'B25-useragent.network');
+                xhr.send(params);
+            }
+        }
+    }
+</script>
+
+EOD;
+
+}
+
+
+/**
+ * Smart Link Comptabilité - POUR LES DOSSIERS
+ */
+
+/**
+ * Pour le comptage des liens des breves
+ */
+
+$link = link_rewrite('traitementComptableLienExterneDossier',true,'AJAX');
+echo <<<EOD
+<script>
+
+    // ajout d'un écouteur d'évènement au lien du dossier
+    var dossier = document.getElementById("span-dossier");
+    if(dossier !== null){
+        var id = dossier.getAttribute('num');
+        var links = dossier.getElementsByTagName("a");
+        for (var i = 0; i < links.length; i++) {
+            var hrefLink = links[i].getAttribute('href');
+            if (links[i].addEventListener){
+                links[i].addEventListener("click", function(){
+
+                    var xhr = createXHR();
+                    xhr.onreadystatechange = function(){
+                        if(xhr.readyState == 4){
+                            if(xhr.status == 200){
+                                console.log(xhr.responseText);
+                            }
+                        }
+                    };
+
+
+                    var params = 'link='+this.getAttribute('href')+'&id='+id;
+                    xhr.open( 'POST' , '$link', true);
+                    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                    //nom d'en-tête interdite https://developer.mozilla.org/fr/docs/Glossaire/Forbidden_header_name
+                    //xhr.setRequestHeader("Content-length", params.length);
+                    //xhr.setRequestHeader("Connection", "close");
+                    //xhr.setRequestHeader("User-Agent", 'B25-useragent.network');
+                    xhr.send(params);
+
+
+                }, false);
+            }else{
+                /*links[i].attachEvent('onclick', LinkComptabilite(hrefLink,id));*/
+            }
+            //links[i].onclick = function() {LinkComptabilite(hrefLink,id)};
+        }
+    }
+</script>
+EOD;
+/**
+ * Pour l'affichage dans le cas où l'on est l'admin
+ */
+if (isset($_SESSION['type_compte']) && $_SESSION['type_compte'] == 0) {
+    $link = link_rewrite('traitementComptabiliteLienExterneDossier',true,'AJAX');
+    echo <<<EOD
+<script>
+
+    // ajout d'un écouteur d'évènement au lien du dossier
+    var dossier = document.getElementById("span-dossier");
+    if(dossier !== null){
+        var id = dossier.getAttribute('num');
+        var links = dossier.getElementsByTagName("a");
+        for (var i = 0; i < links.length; i++) {
+            var hrefLink = links[i].getAttribute('href');
+            console.log(hrefLink);
+            console.log(id);
+            let xhr = createXHR();
+            xhr.i = i;
+
+            xhr.onreadystatechange = function(){
+                if(xhr.readyState == 4){
+                    if(xhr.status == 200){
+                        dossier = document.getElementById("span-dossier");
+                        links = dossier.getElementsByTagName("a");
+                        var spanNode = document.createElement("span");
+
+                        spanNode.innerHTML = "<span style='display:inline;position:relative;background-color:white;border-radius:50%;top:-5px;font-size:smaller;'><sup>["+xhr.responseText+"]</sup></span>";
+                        for (var i = 0; i < links.length; i++) {
+                            if(i == this.i ){
+                                links[i].appendChild(spanNode);
+                            }
+                        }
+                    }
+                }
+            };
+
+
+            var params = 'link='+hrefLink+'&id='+id;
+            xhr.open( 'POST' , '$link', true);
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            //nom d'en-tête interdite https://developer.mozilla.org/fr/docs/Glossaire/Forbidden_header_name
+            //xhr.setRequestHeader("Content-length", params.length);
+            //xhr.setRequestHeader("Connection", "close");
+            //xhr.setRequestHeader("User-Agent", 'B25-useragent.network');
+            xhr.send(params);
+        }
+    }
+</script>
+
+EOD;
+
+}

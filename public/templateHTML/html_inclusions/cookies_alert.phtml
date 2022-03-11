@@ -1,0 +1,36 @@
+<?php
+
+if( !isset($_COOKIE['CookieApp_CO'])
+    ||
+    (
+        (isset($_COOKIE['CookieApp_CO']) && $_COOKIE['CookieApp_CO'] == 1)
+    &&
+        (isset($_COOKIE['CookieApp_CO_LeCookie']) && $_COOKIE['CookieApp_CO_LeCookie'] == 0)
+    )
+    ){
+
+
+    echo <<<EOD
+
+<div class='B25-alert'>
+    <div style='display:inline; float:left; padding-left: 10px;'>
+        <p>
+    Les Cookies sont nécessaires au bon fonctionnement de la plate-forme, Acceptez-vous
+    leur dépots sur votre ordinateur par le biais de votre navigateur/butineur Internet ?
+        </p>
+    </div>
+    <div style="display:inline; float: right; padding-right: 10px;">
+    <form method='post' action='/controlleurs/traitementPreferencesCookies.php'>
+    <input type='hidden' name='accept' value='1' />
+    <input type='submit' value='Oui' class='btn_cookie' witdh='50px' />
+    </form>
+    <form method='post' action='/controlleurs/traitementPreferencesCookies.php'>
+    <input type='hidden' name='accept' value='0' />
+    <input type='submit' class='btn_cookie' witdh='500px' value='En savoir plus et paramètrer leur utilisation' class='btn_modif_preferences' witdh='500px' />
+    </form>
+    </div>
+</div>
+
+EOD;
+
+}

@@ -1,0 +1,78 @@
+.cadre{
+	padding: 0px;
+	margin: 5px;
+	max-width: 100%;
+}
+.bordH{
+	border-bottom: 10px solid #CCC; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    width: 100%;
+    height: 0px;
+}
+.contenuEnCadre{
+	max-width: 100%;
+	/*padding: 1rem !important;*/
+}
+.bordB{
+	border-top: 10px solid #CCC; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    width: 100%;
+    height: 0px;
+}
+.cadreImage{
+	/*do not work properly on the Web*/
+	border-width: 10px;
+	-moz-border-image: url("../images/cadre-entier.png") 9 9 9 9 stretch;
+	-webkit-border-image: url("../images/cadre-entier.png") 9 9 9 9 stretch;
+	-o-border-image: url("../images/cadre-entier.png") 9 9 9 9 stretch;
+	border-image: url("../images/cadre-entier.png") 9 9 9 9 stretch;
+
+}
+
+.cadreImageSupSVG:before{
+	content: url(../images/cadre-sup-haut.svg)url(../images/cadre-sup-haut.svg);
+	position: relative;
+	display: block;
+	top: -10px;
+	left: 10px;
+}
+.cadreImageSupSVG:after{
+	content: url(../images/cadre-sup-bas.svg)url(../images/cadre-sup-bas.svg);
+	position: relative;
+	display: block;
+	top: 10px;
+	left: 10px;
+}
+.cadreImageSupSVG{
+	/*do not work as I want */
+	background: #CCC;
+}
+
+.cadreImageSVG:before{
+	content: url(../images/cadre-haut.svg);
+	position: relative;
+	display: block;
+	top: -10px;
+	left: 10px;
+}
+.cadreImageSVG:after{
+	content: url(../images/cadre-bas.svg);
+	position: relative;
+	display: block;
+	top: 10px;
+	left: 10px;
+}
+.cadreImageSVG{
+	/*do not work as I want */
+	background: #CCC;
+}
+.menumain{
+	padding: 1rem;
+}
+.spacy-border{
+	border: 1px dotted white;
+	padding: 1rem;
+	margin: 1rem;
+}

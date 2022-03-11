@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'WebSymbolsRegular';
+    src: url('../../typographies/web-symbols/websymbols-regular-webfont.eot');
+    src: url('../../typographies/web-symbols/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../typographies/web-symbols/websymbols-regular-webfont.woff') format('woff'),
+         url('../../typographies/web-symbols/websymbols-regular-webfont.ttf') format('truetype'),
+         url('../../typographies/web-symbols/websymbols-regular-webfont.svg#web_symbolsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'WebHostingGlyphs';
+    src: url('../../typographies/webhostinghub-glyphs/webhostinghub-glyphs-webfont.eot');
+    src: url('../../typographies/webhostinghub-glyphs/webhostinghub-glyphs-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../typographies/webhostinghub-glyphs/webhostinghub-glyphs-webfont.woff') format('woff'),
+         url('../../typographies/webhostinghub-glyphs/webhostinghub-glyphs-webfont.ttf') format('truetype'),
+         url('../../typographies/webhostinghub-glyphs/webhostinghub-glyphs-webfont.svg#webhostinghub-glyphsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ModernPictograms';
+    src: url('../../typographies/modern-pictograms/modernpics-webfont.eot');
+    src: url('../../typographies/modern-pictograms/modernpics-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../typographies/modern-pictograms/modernpics-webfont.woff') format('woff'),
+         url('../../typographies/modern-pictograms/modernpics-webfont.ttf') format('truetype'),
+         url('../../typographies/modern-pictograms/modernpics-webfont.svg#modern_pictogramsnormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HeydingsControls';
+    src: url('../../typographies/heydings-controls/heydings_controls-webfont.eot');
+    src: url('../../typographies/heydings-controls/heydings_controls-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../typographies/heydings-controls/heydings_controls-webfont.woff') format('woff'),
+         url('../../typographies/heydings-controls/heydings_controls-webfont.ttf') format('truetype'),
+         url('../../typographies/heydings-controls/heydings_controls-webfont.svg#heydings_controlsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HeydingsCommonIcons';
+    src: url('../../typographies/heydings-common-icons/heydings_icons-webfont.eot');
+    src: url('../../typographies/heydings-common-icons/heydings_icons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../typographies/heydings-common-icons/heydings_icons-webfont.woff') format('woff'),
+         url('../../typographies/heydings-common-icons/heydings_icons-webfont.ttf') format('truetype'),
+         url('../../typographies/heydings-common-icons/heydings_icons-webfont.svg#heydings_iconsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'EnTypo';
+    src: url('../../typographies/entypo/entypo-webfont.eot');
+    src: url('../../typographies/entypo/entypo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../typographies/entypo/entypo-webfont.woff') format('woff'),
+         url('../../typographies/entypo/entypo-webfont.ttf') format('truetype'),
+         url('../../typographies/entypo/entypo-webfont.svg#entyporegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,361 @@
+
+.permanent-gueuloir{
+		background-image: url('../../images/background_simple-3.png');
+}
+	
+@media ( min-width : 641px ) and ( max-width: 1100px ){
+	.permanent-gueuloir{
+		display:block;
+		width: 100%;
+		padding: 5%;
+		z-index: 50;
+	}
+	.table-mobile{
+		display: block;
+	}
+}
+
+@media ( max-width: 640px ){
+	.permanent-gueuloir{
+		padding: 2%;
+	}
+	.table-mobile{
+		display: block;
+	}
+}
+	
+@media (max-width: 767px) {
+	
+	header {
+		z-index: 71 !important;
+		height: 500px;
+		width: 100%;
+	}
+	#en-tete{
+		width: 100% !important;
+		left: 0px !important;
+		right: 0px !important;
+		height: 350px !important;
+	}
+	.GenerationPage{
+		display: none;
+	}
+	div.imagebd{
+		position: absolute !important;
+		top: 350px !important;
+		left: 0px !important;
+		right: 0px !important;
+		width: 100% !important;
+		height: 100% !important;
+		z-index: 50 !important;
+	}
+	.imagebd img{
+		max-width: 100% !important;
+		width: 100% !important;
+		height: auto !important;
+	}
+	div.logoMenu{
+		position: relative !important;
+		display: block;
+		top: 175px !important;
+		left: 0px !important;
+		right: 0px !important;
+		margin: auto auto !important;
+		padding: auto auto !important;
+		z-index: 72 !important;
+	}
+	.menu{
+		background-color: #663333;
+		position: fixed !important;
+		display: block;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		width: 100% !important;
+		z-index: 75 !important;
+	}
+	div.boutonsMenu{
+		position: fixed !important;
+		top: 10px !important;
+		left: 0px !important;
+		right: 0px !important;
+		width: 100% !important;
+		height: 0px;
+		z-index: 75 !important;
+		}
+	#sous-menu{
+		position: fixed !important;
+		top: 2px !important;
+		left: 2px !important;
+		width: 95% !important;
+		z-index: 74 !important;
+	}
+	div.boutonsSousmenu{
+		position: fixed !important;
+		top: 2px !important;
+		right: 2px !important;
+		z-index: 74 !important;
+	}
+	.sousmenu{
+		position:fixed;
+		top: 5px;
+		left: 5px;
+		height: 135px !important;
+		width: 75% !important;
+	}
+	.sousmenu ul{
+		width: 50%;
+	}
+	.sousmenu li {
+		display:inline-block !important;
+		width: 95% !important;
+		height: 65px !important;
+	}
+	.sousmenu li div.sousmenu-lien1{
+    display: block !important;
+    width: 100% !important;
+	}
+	.sousmenu li div.sousmenu-lien2{
+    display: block !important;
+    position: relative;
+    top: 40px;
+    left: 20px;
+    width: 100% !important;
+	}
+	.sousmenu li div.sousmenu-lien3{
+    display: inline;
+    width: 50% !important;
+	}
+	#HeureDate{
+    display: block;
+    width: 100%;
+	}
+	.sousmenu li span ~ span{
+    display: inline !important;
+	}
+	div.limiteur{
+		background-color: black;
+		position: fixed !important;
+		top: 0px !important;
+		left: 0px !important;
+		right: 0px !important;
+		width: 100% !important;
+		height: 55px !important;
+		z-index: 55 !important;
+	}
+	div.corps{
+		position: absolute;
+		padding: 2px;
+		margin: auto;
+		top: 450px !important;
+		width: 100%;
+		z-index: 51 !important;
+	}
+	div.contenu{
+		position: relative;
+		padding: 10px 0px 50px 0px !important;
+		margin: 0px 0px;
+		top: 100px;
+		left: 0px !important;
+		right: 0px !important;
+		width: 100% !important;
+		z-index: 52 !important;
+	}
+	div.piedDePage{
+	}
+
+.menu{
+		position: fixed !important;
+		top: 94px !important;
+		left: 0px !important;
+		width: 100% !important;
+		margin: 0px !important;
+		padding: 0px !important;
+	}
+
+.menu li{
+    width: 100% !important;
+    height: 65px !important;
+    overflow: hidden;
+    display: block;
+    background: #fff;
+    -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    margin-bottom: 4px;
+    border-left: 10px solid #ccc;
+    
+    -webkit-transition: clear !important;
+		-moz-transition: clear !important;
+		-o-transition: clear !important;
+		-ms-transition: clear !important;
+		transition: clear !important;
+    
+    -webkit-transition: all 300ms ease-in-out !important;
+		-moz-transition: all 300ms ease-in-out !important;
+		-o-transition: all 300ms ease-in-out !important;
+		-ms-transition: all 300ms ease-in-out !important;
+		transition: all 300ms ease-in-out !important;
+}
+.menu li:last-child{
+    margin-bottom: 0px;
+}
+.menu li a{
+    display: block;
+    position: relative;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 65px;
+    color: #333;
+}
+.menu-icone{
+    font-family: 'EnTypo', cursive;
+    font-size: 20px;
+    text-shadow: 0px 0px 1px #333;
+    line-height: 90px;
+    position: absolute;
+    width: 90px;
+    left: -10px;
+    top: -20px;
+    text-align: center;
+
+    -webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+
+    -webkit-transition: all 300ms linear !important;
+    -moz-transition: all 300ms linear !important;
+    -o-transition: all 300ms linear !important;
+    -ms-transition: all 300ms linear !important;
+    transition: all 300ms linear !important;
+}
+.menu-contenu{
+    position: absolute;
+    left: 55px;
+    width: 300px; !important
+    height: 50px; !important
+    top: -5px;
+    padding: 0px !important;
+    margin: 0px !important;
+    line-height: 0px !important;
+}
+.menu-titre{
+    font-size: 20px !important;
+    width: 320px !important;
+    height: 100px !important;
+    line-height: 5px !important;
+    position: absolute !important;
+    top: 7px !important;
+    left: 50px !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    -webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+
+    -webkit-transition: all 300ms linear !important;
+    -moz-transition: all 300ms linear !important;
+    -o-transition: all 300ms linear !important;
+    -ms-transition: all 300ms linear !important;
+    transition: all 300ms linear !important;
+    
+}
+.menu-description{
+    font-size: 6px;
+    color: #666;
+    position: absolute !important;
+    top: 10px !important;
+    left: 110px !important;
+    line-height: 2em !important;
+    width: 320px !important;
+    height: 100px !important;
+    margin: 7px 0px 0px 0px;
+    padding: 1px;
+
+    -webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+
+    -webkit-transition: all 300ms linear !important;
+    -moz-transition: all 300ms linear !important;
+    -o-transition: all 300ms linear !important;
+    -ms-transition: all 300ms linear !important;
+    transition: all 300ms linear !important; 
+}
+.menu li:hover{
+    border-color: #633;
+    background: #eee;
+}
+.menu li:hover .menu-icone{
+    color: #333;
+    text-shadow: 0px 0px 5px #ccc !important;
+    font-size: 1500px !important;
+    left: 10px !important;
+    top: -20px !important;
+    opacity: 0.2;
+
+    -webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+		
+		-webkit-transition: all 300ms linear !important;
+    -moz-transition: all 300ms linear !important;
+    -o-transition: all 300ms linear !important;
+    -ms-transition: all 300ms linear !important;
+    transition: all 300ms linear !important;
+
+
+}
+.menu li:hover .menu-titre{
+    color: #633;
+    font-size: 22px !important;
+    top: 8px !important;
+    left: 50px !important;
+
+    -webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+
+	  -webkit-transition: all 300ms linear !important;
+    -moz-transition: all 300ms linear !important;
+    -o-transition: all 300ms linear !important;
+    -ms-transition: all 300ms linear !important;
+    transition: all 300ms linear !important;
+}
+.menu li:hover .menu-description{
+    color: #000;
+    font-size: 12px !important;
+    top: 6px !important;
+    left: 10px !important;
+
+    -webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+
+	  -webkit-transition: all 300ms linear !important;
+    -moz-transition: all 300ms linear !important;
+    -o-transition: all 300ms linear !important;
+    -ms-transition: all 300ms linear !important;
+    transition: all 300ms linear !important;
+}
+.B25-cadre-inverse{
+		width: 95%;
+	}
+.table-mobile-cell{
+	display:inline-block !important;
+}
+}

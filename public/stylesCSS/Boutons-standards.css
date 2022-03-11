@@ -1,0 +1,174 @@
+@CHARSET "UTF-8";
+/* *** BOUTONS CLASSIQUE AVEC DES HTML ENTITIES BEFORE */
+
+.button {        
+    display: inline-block;
+    background-color: #ccc;
+    background-image: linear-gradient(top, #eee, #ccc);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee', EndColorStr='#cccccc');
+    border: 1px solid #777;
+    padding: 0 1.5em;
+    margin: 0.5em;
+	font-size: 1em;
+	line-height: 2em;
+	font-style: normal;
+	font-variant: capitalize;
+	font-weight: bold;
+    font-family: "Arial", "DejaVu",  "Helvetica", "Free", sans-serif;
+	text-decoration: none;
+    color: #333;
+    text-shadow: 0 1px 0 rgba(255,255,255,.8);
+    border-radius: .2em;
+    box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset, 0 1px 0 rgba(0,0,0,.3);
+}
+.button-big{
+	font-size: 5em;
+	
+}
+
+.button:hover {
+    background-color: #ddd;        
+    background-image: linear-gradient(top, #fafafa, #ddd);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fafafa', EndColorStr='#dddddd');        
+}
+
+.button:active {
+    box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
+    position: relative;
+    top: 1px;
+}
+
+.button:focus {
+    outline: 0;
+    background: #fafafa;
+}    
+
+.button:before {
+    background-color: #ccc;
+    background-color: rgba(0,0,0,.1);
+    float: left;        
+    width: 1em;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: "Free", "DejaVu", "Arial", "Helvetica", sans-serif;
+    margin: 0 1em 0 -1em;
+    padding: 0 .2em;
+    box-shadow: 1px 0 0 rgba(0,0,0,.5), 2px 0 0 rgba(255,255,255,.5);
+    border-radius: .15em 0 0 .15em;
+    pointer-events: none;        
+}
+
+/* Hexadecimal entities for the icons */
+
+.add:before {
+    content: "\271A";
+}
+
+.edit:before {
+    content: "\270E";        
+}
+.handedit:before {
+    content: "\270D";        
+}
+.delete:before {
+    /*content: "\2718";*/
+}
+.cross:before  {
+	content: "\2716"; 
+}
+.save:before {
+    content: "\2714";        
+}
+.valid:before {
+    content: "\2713";        
+}
+.email:before {
+    content: "\2709";        
+}
+
+.next:before {
+    content: "\27F6";
+}
+.before:before {
+    content: "\27F5";
+}
+.international:before {
+	content: "\2708";
+}
+.play:before {
+    content: "\25B6";
+}
+/*Temp*/
+.celsius:before    { content: "\2103"; }
+.fahrenheit:before { content: "\2109"; }
+/*Currency*/
+.dollar:before { content:"\0024"; }
+.euro:before   { content:"\20AC"; }
+.pound:before  { content: "\00A3"; }
+.cent:before   { content: "\20B5"; }
+/*Math & Factions*/
+.pi:before            { content: "\213C"; }
+.one_thrid:before     { content: "\2153"; }
+.two_thrid:before     { content: "\2154"; }
+.one_fifth:before     { content: "\2155"; }
+.two_fifth:before     { content: "\2156"; }
+.three_fifth:before   { content: "\2157"; }
+.four_fifth:before    { content: "\2158"; }
+.one_sixth:before     { content: "\2159"; }
+.five_sixth:before    { content: "\215A"; }
+.one_eighth:before    { content: "\215B"; }
+.three_eighth:before  { content: "\215C"; }
+.five_eighth:before   { content: "\215D"; }
+.seven_eighth:before  { content: "\215E"; }
+.quarter:before       { content: "\00BC"; }
+.half:before          { content: "\00BD"; }
+.three_quarter:before { content: "\00BE"; }
+/*Arrows*/
+.next:before             { content: "\279C"; }
+.left_arrow:before       { content: "\2190"; }
+.up_arrow:before         { content: "\2191"; }
+.right_arrow:before      { content: "\2192"; }
+.down_arrow:before       { content: "\2193"; }
+.up_left_arrow:before    { content: "\2196"; }
+.up_right_arrow:before   { content: "\2197"; }
+.down_left_arrow:before  { content: "\2199"; }
+.down_right_arrow:before { content: "\2198"; }
+/*Symbols*/
+.like:before               { content: "\2764"; }
+.star:before               { content: "\2605"; }
+.spark:before              { content: "\2737"; }
+.play:before               { content: "\25B6"; }
+.watch:before              { content: "\231A"; }
+.blacksun:before           { content: "\2600"; }
+.cloud:before              { content: "\2601"; }
+.umbrella:before           { content: "\2602"; }
+.snowman:before            { content: "\2603"; }
+.blackstar:before          { content: "\2605"; }
+.whitestar:before          { content: "\2606"; }
+.blackphone:before         { content: "\260E"; }
+.whitephone:before         { content: "\260F"; }
+.saltire:before            { content: "\2613"; }
+.hot_drink:before          { content: "\2615"; }
+.skull:before              { content: "\2620"; }
+.radioactive:before        { content: "\2622"; }
+.biohazard:before          { content: "\2623"; }
+.peace:before              { content: "\262E"; }
+.yingyang:before           { content: "\262F"; }
+.frowning_face:before      { content: "\2639"; }
+.smiling_face:before       { content: "\263A"; }
+.first_quarter_moon:before { content: "\263D"; }
+.last_quarter_moon:before  { content: "\263E"; }
+.wheelchair:before         { content: "\267F"; }
+.recycle:before            { content: "\267D"; }
+.recycle2:before           { content: "\267C"; }
+.music_note:before         { content: "\266C"; }
+.warning:before            { content: "\26A0"; }
+.male_and_female:before    { content: "\26A4"; }
+.scissors:before           { content: "\2701"; }
+.airplane:before           { content: "\2708"; }
+.snow:before               { content: "\2042"; }
+/* *** BUTTONS EN BORDEL **/
+.archivage:before			   { content: "\20D5\2B1C"; }
+.desarchivage:before		   { content: "\20D4\2B1B"; }
+.demarronage:before			   { content: "\20D4\1D13"; }
+.marronage:before			   { content: "\20D5\1D11"; }

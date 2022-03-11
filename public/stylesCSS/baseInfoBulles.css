@@ -1,0 +1,129 @@
+@CHARSET "UTF-8";
+
+	/* STYLE CSS DES BOUTONS DE TEXTE EXTENSIBLES */
+.aep
+	{
+		color: #A00;
+	    text-decoration: underline;
+		text-decoration-style: dashed;
+		cursor: help;
+	}
+
+	/* INFOBULLE DE LA GESTION UTILISATEUR */
+	
+a.info{
+    position: relative; 
+    z-index: 24;
+    color: black;
+    text-decoration: none
+}
+
+a.info:hover{
+	z-index: 25;
+}
+a.info span{
+	display: none;
+}
+a.info:hover span{
+	display: block;
+	position: absolute;
+	top: -5em; left: 15em; width:25em; height: 20em;
+	border: 1px solid #663333;
+	background-color: #FFFFFF;
+	color: #000000;
+	text-align: justify;
+	font-weight: none;
+	padding: 1px;
+}
+	 /* INFOBULLE DU BOUTON MON COMPTE */
+
+.infobulle {
+    outline: none;
+    text-decoration: none;
+    border-bottom: dotted 1px blue;
+    position: relative;	
+}
+
+.infobulle strong {
+    line-height: 30px;
+}
+
+
+.infobulle > span.txt_infobulle {
+    width: auto;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-left: -20px;
+    opacity: 0;
+	z-index: 10;
+    visibility: hidden;
+    position: absolute;
+    font-family: Arial;
+    font-size: 12px;
+    font-style: normal;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px #999;
+    -webkit-transition-property: opacity, margin-top, visibility, margin-left;
+    -webkit-transition-duration: 0.4s, 0.3s, 0.4s, 0.3s;
+    -webkit-transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+    transition-property: opacity, margin-top, visibility, margin-left;
+    transition-duration: 0.4s, 0.3s, 0.4s, 0.3s;
+    transition-timing-function: 
+        ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+}
+
+.sousmenu > li{
+	overflow: visible;
+}
+.sousmenu li div.sousmenu-lien1{
+	overflow: visible;
+}
+.infobulle:hover > span.txt_infobulle {
+    opacity: 1;
+    text-decoration: none;
+    visibility: visible;
+    overflow: none;
+    margin-top: 35px;
+	padding-top: 25px;
+    display: inline;
+    margin-left: -20px;
+    color: #000000; 
+	background: #FBF5E6;
+	border: 1px solid #660000;
+}
+.txt_infobulle:hover{
+	opacity: 1;
+	visibility: visible;
+}
+span.txt_infobulle > ol li {
+	color: #000000; 
+	height: auto;
+	background: #E6E7E9;
+	padding: 1px;
+	margin: 2px;
+	border: 1px solid #660000;
+	border-radius: 5px;     
+}    
+	  
+.infobulle span.txt_infobulle b.ico_infobulle {
+	width:20px;
+	height:20px;
+	border:5px solid #069;
+	border-color:transparent transparent transparent transparent;
+	border-width:20px;
+	display: block;
+    position: absolute;
+	margin-left: 40px;
+    margin-top: -30px;
+	-webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+	-webkit-box-shadow: inset -1px 1px 0 #fff;
+    -moz-box-shadow: inset 0 1px 0 #fff;
+    -o-box-shadow: inset 0 1px 0 #fff;
+    box-shadow: inset 0 1px 0 #fff;
+	background: #FBF5E6;
+	border-top: 1px solid #660000;
+	border-right: 1px solid #660000;
+}    

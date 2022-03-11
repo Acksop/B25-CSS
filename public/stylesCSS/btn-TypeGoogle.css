@@ -1,0 +1,40 @@
+.save:before {
+    content: "\12";
+    background: url(./sprite.png) 10px -275px no-repeat #f3f3f3;
+}
+.add:before {
+    content: "\12";
+    background: url(./sprite.png)  10px -31px no-repeat #f3f3f3;
+}
+.delete:before {
+    content: "\12";
+    background: url(./sprite.png)  10px -64px no-repeat #f3f3f3;
+}
+.refresh:before {
+    content: "\12";
+    background: url(./sprite.png)  10px -205px no-repeat #f3f3f3;
+}
+.send:before {
+    content: "\12";
+    background: url(./sprite.png)  10px -241px no-repeat #f3f3f3;
+}
+.flag:before {
+    content: "\12";
+    background: url(./sprite.png)  10px -100px no-repeat #f3f3f3;
+}
+.up:before {
+    content: "\12";
+    background: url(./sprite.png)  13px -135px no-repeat #f3f3f3;
+}
+.down:before {
+    content: "\12";
+    background: url(./sprite.png)  13px -170px no-repeat #f3f3f3;
+}
+.tick:before {
+    content: "\12";
+    background: url(./sprite.png)  13px 5px no-repeat #f3f3f3;
+}
+.print:before {
+    content: "\12";
+    background: url(./sprite.png)  13px -309px no-repeat #f3f3f3;
+}

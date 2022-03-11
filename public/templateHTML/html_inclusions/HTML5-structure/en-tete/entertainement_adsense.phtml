@@ -1,0 +1,16 @@
+<?php
+
+
+if (!estActifOuPasDoNotTrackHeader()
+    &&
+    (isset($_COOKIE['CookieApp_CA']) && $_COOKIE['CookieApp_CA'] == 1)
+    &&
+    (isset($_COOKIE['CookieApp_CA_Gadverts']) && $_COOKIE['CookieApp_CA_Gadverts'] == 1)
+) {
+
+    echo <<<EOD
+    
+   <script data-ad-client="ca-pub-3240142213869705" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      
+EOD;
+}

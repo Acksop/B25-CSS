@@ -1,0 +1,112 @@
+header {
+position: absolute;
+margin: 0px;
+padding: 0px 0px 100px 0px;
+top: 0px;
+left: 0px;
+width: 280px;
+height: auto;
+z-index: 4;
+}
+div.logoMenu{
+	position: relative;
+}
+div.boutonsMenu{
+	position: absolute;
+	width: 250px;
+	margin: auto;
+}
+div.boutonsSousmenu{
+position: absolute;
+top: 3px;
+right: 10px;
+z-index: 4;
+}
+
+div.limiteur{
+background-color: black;
+position: absolute;
+top: 0px;
+left: 275px;
+width: 55px;
+height: 1250px;
+z-index: 2;
+}
+div.mini-limiteur {
+	top: 0px;
+	position: relative;
+	height: 100%;
+	background-color: #B40431;
+	width: 5px;
+	left: 10px;
+}
+
+#contenu-principal {
+  width: 80% !important;
+}
+
+div.corps{
+position: absolute;
+padding: 0%;
+margin: 0%;
+width: 100%;
+top: 75px;
+left: 0%;
+z-index: 3;
+}
+div.corps a+div{
+	/*width: 70% !important;*/
+}
+div.contenu{
+position: relative;
+left: 300px;
+width: 100%;
+min-height: 1200px;
+}
+div.piedDePage{
+height: 750px;
+right: 0px;
+}
+
+div.article{
+position:relative;
+}
+div.gueuloir{
+position:relative;
+display: none;
+}
+
+div.imagebd{
+background: none;
+position: absolute;
+top: 0px;
+left: 270px;
+z-index: 2;
+}
+div.cadreArrondi{
+border-width: 1px;
+}
+div.formulaire{
+display: block;
+}
+div.telechargementEnCours{
+display: none;
+}
+
+.bandeau-guerre-2022{
+	left: 0px !important;
+	right: 1015px !important;
+	top: 1147px !important;
+}
+
+	@media ( min-width : 641px ) and ( max-width: 1100px ){
+		div.corps a+div{
+			width: 60% !important;
+		}
+	}
+
+	@media ( max-width : 767px ){
+		div.corps a+div{
+			width: 100% !important;
+		}
+	}

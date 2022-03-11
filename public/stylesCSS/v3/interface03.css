@@ -1,0 +1,84 @@
+
+header{
+position: absolute;
+top: 0px;
+right: 0px;
+width: 100%;
+height: 400px;
+z-index: 3;
+}
+div.logoMenu{
+position: absolute;
+left: 10px;
+z-index: 3;
+}
+div.boutonsMenu{
+position: absolute;
+left: 250px;
+top: -10px;
+z-index: 3;
+}
+div.boutonsSousmenu{
+position: absolute;
+top: 330px;
+right: 20px;
+z-index: 3;
+}
+div.limiteur{
+background-color: black;
+position: absolute;
+top: 400px;
+right: 0px;
+width: 100%;
+height: 50px;
+z-index: 2;
+}
+div.mini-limiteur{
+    top:20px;
+    position: relative;
+    height: 9px;
+}
+div.corps{
+position: absolute;
+padding: 0%;
+margin: 0%;
+width: 100%;
+left: 0px;
+z-index: 3;
+top: 450px;
+}
+div.contenu{
+padding: 7%;
+width: 82%;
+}
+div.piedDePage{
+height: 900px;
+}
+div.article{
+position:relative;
+}
+div.gueuloir{
+position:relative;
+display: none;
+}
+
+div.imagebd{
+background: none;
+position: absolute;
+top: 400px;
+right: 270px;
+z-index: 2;
+}
+div.cadreArrondi{
+border-width: 1px;
+}
+div.formulaire{
+display: block;
+}
+div.telechargementEnCours{
+display: none;
+}
+
+
+.bandeau-guerre-2022{
+}

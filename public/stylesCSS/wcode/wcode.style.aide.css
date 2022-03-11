@@ -1,0 +1,82 @@
+
+  p
+  {
+   font-family: Tahoma;
+   color: #000000;
+   font-size: 12px;
+   margin-left: 12px;
+   margin-right: 12px;
+  }
+
+  p.centrer { text-align:center; }
+
+  hr { padding:0; }
+
+  h1
+  {
+   color: #000044;
+   font-family: Arial;
+   font-size: 20px;
+   text-align: center;
+  }
+
+h2
+  {
+   color:#000044;
+   font-family: Arial;
+   font-size: 14px;
+   text-align: left;
+   margin-left: 10px;
+  }
+
+  table {
+   border-left: solid #444444 1px;
+   border-top: solid #444444 1px;
+   border-bottom: solid #444444 1px;
+  }
+
+  table td {
+    border-right: solid #444444 1px;
+    padding: 2px 5px 2px 5px;
+  }
+
+  tr.titre {
+  	font-family: Arial;
+  	font-size: 13px;
+  	background: #cccccc;
+  	font-weight: bold;
+  }
+  tr.titre td{ border-bottom: solid #000000 2px; }
+  tr.gris{ background: #eeeeee; }
+  tr.blanc{ background: #ffffff; }
+  tr.categorie{
+	font-weight:bold;
+	font-size: 12px;
+	background: #dddddd;
+	font-family: Tahoma;
+  }
+  tr.categorie td{ border-bottom: solid #000000 1px; }
+  td.code{
+  	font-family: Tahoma;
+  	font-size: 11px;
+  	color: #771100;
+  }  
+  td.description{
+  	font-family: Tahoma;
+  	font-size: 11px;
+  	color: #000000;
+  }
+  td.resultat{
+  	font-family: Tahoma;
+  	font-size: 11px;
+  	color: #000000;
+  	text-align: center;
+  }
+
+  td.smiley{
+   vertical-align: bottom;
+  }
+
+  a {
+        color:#0033dd;
+  }

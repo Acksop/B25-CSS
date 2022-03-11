@@ -1,0 +1,56 @@
+  tr.outils td{
+        border: #eee8ee 1px solid;
+        padding: 5px 0 0 0;
+        margin: 0 0 0 0;
+        background: #fff8ff;
+        text-align:center;
+  }
+
+
+  h1.panneau {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        font-family: Arial;
+        font-size: 15px;
+        border-bottom: #eee8ee 1px solid;
+  }
+
+  p.panneau {
+        font-family: Tahoma;
+        font-size: 12px;
+        margin: 11px 0 0 0;
+        padding: 0 0 0 0;
+        text-align:left;
+  }
+
+
+
+  a { color: #0033dd; }
+
+  input, textarea, select {
+    font-family: Verdana;
+    font-size:11px;
+    margin:0px;
+    padding: 0px;
+    scrollbar-base-color : #eee ;
+    scrollbar-arrow-color : #fff ;
+    border : #bbb 1px solid;
+    border-left : #dcd 3px solid;
+}
+
+ textarea#wcode_champ {
+        width: 500px;
+        height: 200px;
+        background: url(../../images/wcode_images/fond_champ.gif) no-repeat #ffffff;
+        font-family: Tahoma;
+        color: #440044;
+        font-size: 11px;
+        padding: 4px;
+  }
+
+ table.palette td{
+        font-size:3px;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        border: #000000 0px solid;
+ }

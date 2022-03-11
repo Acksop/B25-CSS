@@ -1,0 +1,107 @@
+<?php 
+
+PositionneCSS();
+
+function PositionneCSS(){
+
+
+	if(ACTIVATE_UGLY_CSS_STYLE == false){
+		
+echo <<<EOD
+
+	<!-- POLO CSS Template -->
+		<link href="/stylesCSS/assets/css/plugins.css" rel="stylesheet">
+		<link href="/stylesCSS/assets/css/style.css" rel="stylesheet">
+		
+EOD;
+
+	}
+
+    echo "\n" . "<link type='text/css' rel='stylesheet' href='/stylesCSS/Boutons-supplementaires.css'>";
+    //echo "\n" . "<link type='text/css' rel='stylesheet' href='/stylesCSS/btn-TypeGitHub.css'>";
+    echo "\n" . "<link type='text/css' rel='stylesheet' href='/stylesCSS/btn-TypeGoogle.css'>";
+
+    $version = recuperationCookieVersionInterface();
+    $interface = recuperationCookieInterface();
+    
+    switch($version){
+        case 1:
+            echo "\n" . "<link type='text/css' rel='stylesheet' href='/stylesCSS/v1/baseMenus.css'>";
+            echo "\n" . "<link type='text/css' rel='stylesheet' href='/stylesCSS/v1/menu-mobile.css'>";
+            echo "\n" . "<link id='interface' type='text/css' rel='stylesheet' href='/stylesCSS/v".$version."/interface".ajouterZero($interface).".css'>";
+        break;
+        case 2:
+            echo "\n" . "<link type='text/css' rel='stylesheet' href='/stylesCSS/v2/baseMenus.css'>";
+            echo "\n" . "<link type='text/css' rel='stylesheet' href='/stylesCSS/v2/menu-mobile.css'>";
+            echo "\n" . "<link id='interface' type='text/css' rel='stylesheet' href='/stylesCSS/v".$version."/interface".ajouterZero($interface).".css'>";
+            if($interface > 9 && isset( $_COOKIE['statusMenu'] ) && $_COOKIE['statusMenu'] == 1){
+                echo "\n" . "<link id='interfaceMenu' type='text/css' rel='stylesheet' href='/stylesCSS/v2/interface".ajouterZero($interface)."_menuEmpiler.css'>";
+            }
+            break;
+        case 3:
+            echo "\n" . "<link type='text/css' rel='stylesheet' href='/stylesCSS/v3/baseMenus.css'>";
+            echo "\n" . "<link type='text/css' rel='stylesheet' href='/stylesCSS/v3/menu-mobile.css'>";
+            echo "\n" . "<link id='interface' type='text/css' rel='stylesheet' href='/stylesCSS/v".$version."/interface".ajouterZero($interface).".css'>";
+            echo "\n" . "<link id='menu' type='text/css' rel='stylesheet' href='/stylesCSS/v".$version."/menu".ajouterZero($interface).".css'>";
+        break;
+        case 4:
+            $interface = 1;
+            //echo "\n" . "<link type='text/css' href='/stylesCSS/v4/css/main.css' rel='stylesheet'>";
+
+
+            echo "\n" . "<link type='text/css' href='/stylesCSS/v4/css/b25-styles.css' rel='stylesheet'>";
+            echo "\n" . "<link type='text/css' href='/stylesCSS/v4/css/b25-rotating-cube.css' rel='stylesheet'>";
+            echo "\n" . "<link type='text/css' href='/stylesCSS/v4/css/b25-reading-connect.css' rel='stylesheet'>";
+            echo "\n" . "<link id='interface' type='text/css' rel='stylesheet' href='/stylesCSS/v".$version."/interface".ajouterZero($interface).".css'>";
+            //echo "\n" . "<link type='text/css' rel='stylesheet' href='/stylesCSS/v3/menu-mobile.css'>";
+            break;
+        
+    }
+
+    $temperatureInterface = recuperationCookieTemperature();
+    echo "<link id='color' type='text/css' rel='stylesheet' href='/stylesCSS/v".$version."/color-$temperatureInterface.css'>";
+	
+	$tailleLecture = recuperationCookieTailleLecture();
+	echo "<link id='lecture' type='text/css' rel='stylesheet' href='/stylesCSS/v".$version."/lecture".ajouterZero($tailleLecture).".css'>";
+
+	$glyphs = recuperationCookieGlyph();
+	echo "<link id='typographie' type='text/css' rel='stylesheet' href='/stylesCSS/v".$version."/typographie".ajouterZero($glyphs).".css'>";
+
+
+    echo "\n" . "<link type='text/css' rel='stylesheet' href='/stylesCSS/polices_locales.css'>";
+
+    echo "\n" . "<link type='text/css' rel='stylesheet' href='/stylesCSS/cadre.css'>";
+    echo "\n" . "<link type='text/css' rel='stylesheet' href='/stylesCSS/alerts.css'>";
+
+    echo "\n" . "<link type='text/css' rel='stylesheet' href='/stylesCSS/Boutons-monetization.css'>";
+    echo "\n" . "<link type='text/css' rel='stylesheet' href='/stylesCSS/Boutons-standards.css'>";
+    echo "\n" . "<link type='text/css' rel='stylesheet' href='/stylesCSS/Boutons-formulaire-input.css'>";
+    echo "\n" . "<link type='text/css' rel='stylesheet' href='/stylesCSS/Boutons-beerware.css'>";
+
+    echo "\n" . "<link type='text/css' rel='stylesheet' href='/stylesCSS/baseCorps.css'>";
+    echo "\n" . "<link type='text/css' rel='stylesheet' href='/stylesCSS/baseCorps-under1100px.css'>";
+    echo "\n" . "<link type='text/css' rel='stylesheet' href='/stylesCSS/baseCorps-under640px.css'>";
+    echo "\n" . "<link type='text/css' rel='stylesheet' href='/stylesCSS/baseCorps-under320px.css'>";
+    echo "\n" . "<link type='text/css' rel='stylesheet' href='/stylesCSS/responsive-navigation.css' media='all'>";
+
+    echo "\n" . "<link type='text/css' rel='stylesheet' href='/scriptJS/subModal-1.6/subModal.css' media='all'>";
+
+    echo "\n" . "<link type='text/css' rel='stylesheet' href='/stylesCSS/baseInfoBulles.css'>";
+
+    echo "\n" . "<link type='text/css' rel='stylesheet' href='/stylesCSS/assets/fontawesome-free-5.13.0-web/css/all.css'>";
+    //echo "\n" . "<script src='https://kit.fontawesome.com/3bf0667b99.js' crossorigin='anonymous'></script>";
+
+echo <<<'EOD'
+        <!-- vegas' css -->
+        <link href="/stylesCSS/vegas/vegas.min.css" rel="stylesheet">
+        
+EOD;
+
+    echo "<link type='text/css' rel='stylesheet' href='/scriptJS/feedback.js-master/examples/css/feedback.css'>";
+
+    //AfficherCompleteScript_CSS();
+
+    return;
+
+}
+

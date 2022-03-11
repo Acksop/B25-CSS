@@ -1,0 +1,166 @@
+#contenu{
+	width: 100% !important;
+}
+
+div.limiteur{
+background-color: black;
+position: absolute;
+top: 450px;
+right: 0px;
+width: 100%;
+height: 55px;
+z-index: 72;
+}
+div.mini-limiteur {
+	position: relative;
+	height: 1000px;
+	width: 9px;
+}
+div.menu{
+position: absolute;
+top: 0px;
+left: 0px;
+right: 0px;
+margin: auto;
+padding: auto;width: auto;
+height: auto;
+z-index: 72;
+}
+div.entete{
+background-color: #663333;
+position: absolute;
+top: 0px;
+right: 0px;
+width: 100%;
+height: 450px;
+z-index: 71;
+}
+div.logoMenu{
+position: absolute;
+left: 380px;
+}
+div.boutonsMenu{
+position: absolute;
+left: 250px;
+top: 10px;
+-webkit-transition: all 200ms ease-in;
+-moz-transition: all 200ms ease-in;
+-o-transition: all 200ms ease-in;
+-ms-transition: all 200ms ease-in;
+transition: all 200ms ease-in;
+}
+div.sousmenu{
+position: absolute;
+top: 380px;
+right: 150px;
+z-index: 73;
+-webkit-transition: all 400ms ease-out;
+-moz-transition: all 400ms ease-out;
+-o-transition: all 400ms ease-out;
+-ms-transition: all 400ms ease-out;
+transition: all 400ms ease-out;
+}
+div.corps{
+background-color: #818181;
+position: absolute;
+padding: 0%;
+margin: 0%;
+width: 100%;
+top: 220px;
+left: 0px;
+z-index: 50;
+}
+div.hashtags{
+position:relative;
+visibility: hidden;
+width:100px;
+height:0px;
+z-index:50;
+}
+div.contenu{
+position:relative;
+	background-color: grey;
+padding: 50px 0px 100px 10px;
+width: 75%;
+min-height: 1500px;
+z-index:50;
+}
+div.piedDePage{
+background-color: #cccccc;
+//background-image: url(../images/FinDePage-2.png);
+//background-repeat: repeat-x;
+height: 750px;
+width: 100%;
+position:fixed;
+bottom:0px;
+left:0px;
+z-index: 1;
+}
+div.article{
+position:relative;
+}
+div.gueuloir{
+position:absolute;
+display:block;
+width: 20%;
+top: 500px;
+left: 20px;
+z-index: 51;
+}
+#contenu-principal{
+	position: relative;
+	padding-top: 100px;	
+	z-index: 50;	
+}
+div.imagebd{
+background-color: none;
+position: absolute;
+top: 450px;
+right: 270px;
+z-index: 33;
+}
+div.cadreArrondi{
+border-width: 1px;
+}
+div.formulaire{
+display: block;
+}
+div.telechargementEnCours{
+display: none;
+}
+	@media ( min-width : 641px ) and ( max-width: 1100px ){
+		div.menu{
+		left: 0px;
+		right: 0px;
+		margin: auto;
+		padding: auto;
+		}
+		div.logoMenu{
+		left: 0px;
+		right: 0px;
+		margin: auto;
+		padding: auto;
+		}
+		div.boutonsMenu{
+		right: 250px;
+		}
+		div.sousmenu{
+		right: 25px;
+		}
+	}
+	
+	@media ( max-width : 765px ){
+		div.logoMenu{
+			position: absolute;
+			top: 100px;
+			left: 150px;
+			padding: auto;
+			margin: auto;
+		}
+		div.corps{
+			top: 400px;
+		}
+		div.contenu{
+			top: 100px;			
+		}
+	}

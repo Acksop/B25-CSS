@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'inspiro-icons';
+    src: url('https://xn--besanon25.fr/stylesCSS/fonts/inspiro/inspiro-icons.woff2') format('woff2'),
+        url('https://xn--besanon25.fr/stylesCSS/fonts/inspiro/inspiro-icons.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

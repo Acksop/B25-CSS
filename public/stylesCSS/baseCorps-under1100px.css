@@ -1,0 +1,54 @@
+@media ( min-width : 641px ) and ( max-width: 1100px ){
+
+	video{
+		max-width: 700px;
+	}
+
+	.B25-alert{
+		height: 100px;
+	}
+	.permanent-gueuloir{
+		display:block;
+		width: 100%;
+		padding: 2%;
+		margin: 50px 0px;
+		z-index: 50;
+	}
+	.permanent-table{
+		display: block;
+		width: 100%;
+	}
+
+	div.conteneurGrandArticle {
+		display: block;
+		width: auto;	
+	}
+	div.conteneurArticle { 
+		display: block;
+		width: 100%;
+		margin: 2px;
+	}
+
+	.image-descriptive-association{
+		width: 100%;
+		height: auto;
+	}
+	.image-mur-artiste,image-tabloid-artiste{
+		width: 75%;
+		height: auto;
+	}
+	.bloc_murUtilisateur{
+		left: 10px;
+	}
+	iframe, #mymovie{
+		width: 95%;
+		height: auto;
+	}
+	#bloc_sonore,#bloc_image{
+		position:relative;
+		display:block;
+		clear: both;
+		float: left;
+		margin: 5%;
+	}
+}

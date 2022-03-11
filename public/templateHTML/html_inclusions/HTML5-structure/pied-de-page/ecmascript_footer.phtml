@@ -1,0 +1,211 @@
+<?php
+PositionneJS();
+
+function PositionneJS(){
+
+    /*
+     * DANGER:
+     *  A n'utiliser qu'en cas de debugging de CSS
+     * Rend tout animé et très gourmand en ressources
+     * 
+     * echo "<script type='text/javascript' src='/scriptJS/live.js'></script>";
+     */
+
+	/*
+     * GOODIES :
+	 *   Javascript pour les chutes de neige de Noël
+     */
+	 
+    /*
+	
+    echo <<<EOD
+	
+	<script type='text/javascript' src='/scriptJS/BD_snow.js'></script>    	
+	<script type="text/javascript">
+	BD_snow.config= {
+	     graphic: 'http://besancon25.fr/images/NouvelAn/etoile.png' 
+	    ,amplitude: 20 
+	    ,interval: 6 
+	    ,speed: 50 
+	    ,snowontop: false 
+	}
+	</script>
+
+EOD;
+
+	*/
+	
+	/******		Old Mimines Scripts			******/
+
+    echo "\n" . "<script src='/scriptJS/lib/jquery.3.4.1.min.js'></script>";
+
+    echo "\n" . "<script type='text/javascript' src='/scriptJS/cookie.js'></script>";
+    echo "\n" . "<script type='text/javascript' src='/scriptJS/afficherCacherDIV.js'></script>";
+
+    echo "\n" . "<script type='text/javascript' src='/scriptJS/effetsMonospaceMachine.js'></script>";
+    echo "\n" . "<script type='text/javascript' src='/scriptJS/fonctionsSurvol-LOGOS.js'></script>";
+
+    echo "\n" . "<script type='text/javascript' src='/scriptJS/ajax.js'></script>";
+	
+	echo "\n" . "<script type='text/javascript' src='/scriptJS/changerCSS.js'></script>";  
+    echo "\n" . "<script type='text/javascript' src='/scriptJS/classList.js'></script>";
+
+    echo "\n" . "<script type='text/javascript' src='/scriptJS/Boutons-beerware.js'></script>";
+
+	/******		Relicats			******/
+	
+    //echo "\n" . "<script type='text/javascript' src='/scriptJS/bouton-bascule/oneAccountBouton.js'></script>";
+    //echo "\n" . "<script type='text/javascript' src='/scriptJS/horloge.js'></script>";
+	
+	/******		FIN Relicats		******/
+    
+	//POLO Javascript For Alerts and Caroussel
+	if(ACTIVATE_UGLY_CSS_STYLE == false){
+		
+		echo <<<EOD
+            <!-- POLO Minimal Template -->
+            <script type='text/javascript' src="/scriptJS/assets/js/jquery.js"></script>
+            <script type='text/javascript' src="/scriptJS/assets/js/plugins.js"></script>
+            <!--POLO Template functions-->
+            <script type='text/javascript' src="/scriptJS/assets/js/functions.js"></script>
+EOD;
+
+    }
+    //Script JS (2006) pour créer des fenetres modales - modifié en 2015
+    echo "\n" . "<script type='text/javascript' src='/scriptJS/pageDim.js'></script>";
+    echo "\n" . "<script type='text/javascript' src='/scriptJS/subModal-1.6/common.js'></script>";
+    echo "\n" . "<script type='text/javascript' src='/scriptJS/subModal-1.6/subModal.js'></script>";
+
+    $version = recuperationCookieVersionInterface();
+
+	if($version == 2) {
+        echo "\n" . "<script type='text/javascript' src='/scriptJS/animation-interface-version2.js'></script>";
+    }
+    if($version !== 4) {
+        echo "\n" . "<script type='text/javascript' src='/scriptJS/mobile-menu.js'></script>";
+    }
+	if($version == 4) {
+        echo <<<EOD
+		
+            <script type='text/javascript' src='/scriptJS/animation-interface-version2.js'></script>
+			<!--Rotating Cube functions-->	
+            <script type='text/javascript' src="/scriptJS/v4/js/b25-rotating-cube.js"></script>
+            <script type='text/javascript' src="/scriptJS/v4/js/b25-reading-connect.js"></script>
+			<!--Slider Lecture functions-->	
+			<script type='text/javascript'>
+				function calculPourcentageHauteur() {
+					var hauteurDocument = $(document).height(); // Hauteur du document complet
+					var hauteurFenetre = $(window).height(); // Hauteur de la fenêtre courante (viewport)
+					var position = $(window).scrollTop(); // Position haute au moment du scroll
+					var positionDernierEcran = hauteurDocument - hauteurFenetre; // Position haute du dernier écran visible
+					var ratioHauteur = position / positionDernierEcran; // Ratio de la hauteur
+					var pourcentageHauteur = Math.floor(ratioHauteur * 100); // Pourcentage de la hauteur
+
+					// Affichage de l'évolution du pourcentage de la hauteur dans la console (optionnel)
+					console.log("Pourcentage de la hauteur parcourue : " + pourcentageHauteur + "%");
+
+					return pourcentageHauteur;
+				}
+
+				// Barre de défilement horizontale en fonction du scroll
+				function barreDefilement() {
+					var cible = $("#barre-lecture .progression");
+					cible.css({
+						"width": calculPourcentageHauteur()+"%"
+					});
+				}
+
+
+				// Chargement des fonctions lors du chargement et du scroll
+				$(window).on("load scroll", function() {
+					barreDefilement(); // Barre-lecture
+				});
+			</script>
+			
+EOD;
+
+    }
+
+    //echo "\n" . "<script>window.jQuery || document.write('<script src=\'//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\'><\/script>')</script>";
+    //echo "\n" . "<script>window.jQuery || document.write('<script src=\'\/scriptJS/lib/jquery.3.4.1.min.js\'><\/script>')</script>";
+
+
+    $urlAJAXFeedBack = link_rewrite('postCourrielSignalement',true,'AJAX');
+    $urlFeedBack = link_rewrite('traitementSignalementCourriel',true);
+
+
+	// Javascript For Feedback
+    echo "\n" . "<script src='/scriptJS/feedback.js-master/examples/js/jquery.js'></script>";
+    echo <<<EOD
+<script src="/scriptJS/feedback.js-master/examples/js/feedback.js"></script>
+    
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var api = Feedback({
+            h2cPath:'/scriptJS/feedback.js-master/examples/js/html2canvas-1.0.0-rc.js',
+            appendTo: null, // don't add feedback button to page
+            url: '$urlFeedBack',
+            adapter: new window.Feedback.REDIRECT( '$urlFeedBack','${_SERVER['REMOTE_ADDR']}' ),
+            //url: '$urlAJAXFeedBack',
+            //adapter: new window.Feedback.XHR( '$urlAJAXFeedBack','${_SERVER['REMOTE_ADDR']}' ),
+            ip: '{$_SERVER['REMOTE_ADDR']}',
+        });
+        
+        // instead, let's open when we click
+       document.getElementById('signalement').addEventListener('click',function(){
+            api.open();
+        });
+        
+      });          
+    </script>
+EOD;
+
+
+// Javascript For VEGAS ANIMATION SLIDER
+if(VEGAS_SLIDER && $version !== 1) {
+    echo <<<'EOD'
+        <!-- vegas main js -->
+        <script src="/scriptJS/vegas/vegas.js"></script>
+        <script src="/scriptJS/b25-vegas-slideshow.js"></script>
+EOD;
+}
+
+	// ALL Other Javascript For Programming
+    //AfficherCompleteScript_ECMA();
+
+
+
+	//JAVASCRIPT Needed By Cookies CONTROLS
+
+		//Ebay smart Link
+    if((isset($_COOKIE['CookieApp_CT']) && $_COOKIE['CookieApp_CT'] == 1)
+        &&
+        (isset($_COOKIE['CookieApp_CT_Hyperlien_ebay']) && $_COOKIE['CookieApp_CT_Hyperlien_ebay'] == 1)
+    ) {    //smart ebay link generator
+        echo "<script>window._epn = {campaign: 5338636202};</script>"
+            . "<script src=\"https://epnt.ebay.com/static/epn-smart-tools.js\"></script>";
+    }
+
+		//Gtranslate by Gougoule smart ia translator
+    if((isset($_COOKIE['CookieApp_CF']) && $_COOKIE['CookieApp_CF'] == 1)
+        &&
+        (isset($_COOKIE['CookieApp_CF_i110n_Gtranslate']) && $_COOKIE['CookieApp_CF_i110n_Gtranslate'] == 1)
+    ) {
+        // GTranslate: https://gtranslate.io/
+        echo <<<'EOD'
+
+        <script type="text/javascript">
+            function googleTranslateElementInit2() {new google.translate.TranslateElement({pageLanguage: 'fr',autoDisplay: false}, 'google_translate_element2');}
+        </script><script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+        
+        <script type="text/javascript">
+            /* <![CDATA[ */
+            eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('6 7(a,b){n{4(2.9){3 c=2.9("o");c.p(b,f,f);a.q(c)}g{3 c=2.r();a.s(\'t\'+b,c)}}u(e){}}6 h(a){4(a.8)a=a.8;4(a==\'\')v;3 b=a.w(\'|\')[1];3 c;3 d=2.x(\'y\');z(3 i=0;i<d.5;i++)4(d[i].A==\'B-C-D\')c=d[i];4(2.j(\'k\')==E||2.j(\'k\').l.5==0||c.5==0||c.l.5==0){F(6(){h(a)},G)}g{c.8=b;7(c,\'m\');7(c,\'m\')}}',43,43,'||document|var|if|length|function|GTranslateFireEvent|value|createEvent||||||true|else|doGTranslate||getElementById|google_translate_element2|innerHTML|change|try|HTMLEvents|initEvent|dispatchEvent|createEventObject|fireEvent|on|catch|return|split|getElementsByTagName|select|for|className|goog|te|combo|null|setTimeout|500'.split('|'),0,{}))
+            /* ]]> */
+        </script>
+
+EOD;
+    }
+	
+    return;
+}

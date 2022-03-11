@@ -1,0 +1,78 @@
+<div class='piedDePage' style="background-image: url('/images/FinDePage-<?php echo $temperatureInterface; ?>.png');background-repeat: repeat-x;">
+    <div class='fromBottom'>
+
+        <?php if($version == 4) { ?>
+            <div style="position:relative;display:block; bottom:0px; background:url('/images/line-up.png'); width:100%;height:50px;" >&nbsp;</div>
+        <?php } ?>
+
+        <div class='toBottom'>
+            <center style='padding: -2%;'>
+                &nbsp;
+                <br /><br /><br />
+                <!-- <center><img src='images/NouvelAn/2015/souris de noel.png'></center> -->
+                <span>Besan&ccedil;on 25 c'est aussi d'autres terminaisons de domaines,et des sous-domaines afin de simplifier l'utilisation du m&eacute;dia Internet:
+                <br />
+                   <ul style='list-style-type:none;'>
+                    <li>Une page r&eacute;serv&eacute;e aux <a href='<?php echo PAGEB25COM ?>'>petites-annonces</a> des artistes et artisans sur le .com</li>
+                    <li>Un agenda r&eacute;serv&eacute; aux <a href='<?php echo PAGEB25NET ?>'>&eacute;v&egrave;nements</a> des associations et groupes musicaux sur le .net</li>
+                    <li>Une page de <a href='<?php echo PAGEB25BIZ?>'>publicit&eacute;s</a> r&eacute;serv&eacute;e aux annonceurs, commerces et m&eacute;c&egrave;nes sur le .biz</li>
+                    <li>Une page informative sur le porte-feuille des marques <a href='<?php echo PAGEB25UNILEVER ?>'>Unilever</a></li>
+                    <li>Une page informative sur le porte-feuille des marques <a href='<?php echo PAGEB25NESTLE ?>'>Nestlé</a></li>
+                   </ul>
+                </span>
+                <p>
+                    Besan&ccedil;on 25 est un site &eacute;dit&eacute; par <a href='<?php echo PAGEINFOARTSMEDIA ?>'>Info[ARTS]Media</a>.
+                    <br /><br />
+                    Le serveur est <a href='http://aklam.io/3GDzgD' target='_blank'><!--<a href='http://www.1and1.fr/?kwk=20117144' target='_blank'>-->h&eacute;berg&eacute;</a> dans un centre de donn&eacute;es 1and1 .
+                    <br /><br />
+                    Les <a href='http://www.cnil.fr/vos-obligations/sites-web-cookies-et-autres-traceurs/' >"Cookies informatiques"</a> sont utilis&eacute;s sur cette plate-forme afin que chaque poste-logiciel ait la possibilit&eacute; de choisir sa propre <a href='index.php?page=preferences'>interface</a> .
+                    <br />
+                    Vous avez <a href='<?php echo link_rewrite('preferences') ?>'>la possibilité de paramètrer</a> leurs utilisations-serveur dans le cadre de cette application
+                    <br /><br />
+                    Ce site respecte les droits des Internautes r&eacute;gis par les articles de la loi <i>Informatique et Libert&eacute;es</i> accessible sur le site de la <a href='http://www.cnil.fr'>CNIL</a>
+                </p>
+                <?php if( !detection_mobile() ){ ?>
+                <br /><br /><br />
+                <div class='GenerationPage'>
+                    <table border='0'>
+                        <tr><td>
+                        <?php if( !estActifOuPasDoNotTrackHeader()
+                        &&
+                        (isset($_COOKIE['CookieApp_CA']) && $_COOKIE['CookieApp_CA'] == 1)
+                        &&
+                        (isset($_COOKIE['CookieApp_CA_FlagCounter']) && $_COOKIE['CookieApp_CA_FlagCounter'] == 1)
+                        ) {
+
+                            echo <<<EOD
+        <!--<a href="http://s11.flagcounter.com/more/Uoc8"><img src="https://s11.flagcounter.com/count2/Uoc8/bg_F5F5F5FF/txt_000000/border_CCCCCC/columns_8/maxflags_80/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Free counters!" border="0"></a>-->
+		<!--<a href="http://s11.flagcounter.com/more/Uoc8"><img src="https://s11.flagcounter.com/count/Uoc8/bg_FFFFFF/txt_000000/border_CCCCCC/columns_8/maxflags_40/viewers_Flags+Counter/labels_1/pageviews_1/flags_0/percent_1/" alt="Free counters!" border="0"></a>-->
+		<!--<a href="http://s08.flagcounter.com/more/Uoc8"><img src="http://s08.flagcounter.com/count/Uoc8/bg_CCCCCC/txt_000000/border_CCCCCC/columns_8/maxflags_248/viewers_Visiteurs/labels_0/pageviews_1/flags_0/" alt="Free counters!" border="0"></a>-->
+		<a href="http://s11.flagcounter.com/more/Uoc8"><img src="https://s11.flagcounter.com/count/Uoc8/bg_CCCCCC/txt_000000/border_CCCCCC/columns_8/maxflags_80/viewers_Flags+Counter/labels_1/pageviews_1/flags_0/percent_0/" alt="Free counters!" border="0"></a>
+		</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td>
+EOD;
+                        }
+
+                        echo '<h6><font color="#FFFFFF">Invités en Programmation:</font><br>&nbsp;&nbsp;&nbsp;1 CSS développeur...</h6>';
+
+                        //Calcul du temps de défenestration de la page ... (^_^)
+
+                        $fin = microtime();
+                        $fin_memoire = memory_get_usage();
+                        if(isset($_SESSION['type_compte']) && $_SESSION['type_compte']==0) {
+                            echo "<h6><font color='#FFFFFF'>G&eacute;n&eacute;ration de la page: </font>"
+                                . "<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" . time_elapsed_millisecs($fin - $debut) . "<br />"
+                                . conversionEtOrdonancementMemoire($debut_memoire, $fin_memoire, $debut_pic_memoire, $fin_pic_memoire)
+                                . "</h6>";
+                        }
+                        ?>
+                        </td></tr></table>
+                </div>
+            <br /><br /><br />
+            <?php } ?>
+            </center>
+            <?php if($version != 4) { ?>
+                <div style="position:relative;display:block; bottom:0px; background:url('/images/line-up.png'); width:100%;height:50px;" >&nbsp;</div>
+            <?php }?>
+        </div>
+    </div>
+</div>

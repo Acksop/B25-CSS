@@ -1,0 +1,37 @@
+
+li{
+font-size:14px;
+}
+#breve li {
+font-size: 14px;
+}
+p{
+font-size:14px;
+}
+p.date{
+font-size: 14px;
+}
+p.post{
+font-size: 12px;
+}
+p.Tchat{
+font-size: 14px;
+}
+p.utilisateurs{
+font-size: 14px;
+}
+p.titre{
+font-size: 19px;
+}
+p.breve{
+font-size: 14px;
+}
+p.corpsDossier{
+font-size: 16px;
+}
+p.titreDossier{
+font-size: 21px;
+}
+p.sous-titre{
+font-size: 17px;
+}

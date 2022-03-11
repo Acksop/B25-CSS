@@ -1,0 +1,18 @@
+<?php
+
+if (!estActifOuPasDoNotTrackHeader()
+    &&
+    (isset($_COOKIE['CookieApp_CT']) && $_COOKIE['CookieApp_CT'] == 1)
+    &&
+    (isset($_COOKIE['CookieApp_CT_Neocamino']) && $_COOKIE['CookieApp_CT_Neocamino'] == 1)
+) {
+
+echo <<<EOD
+<!-- Neocamino Pixel Code -->
+<script src='https://app.neocamino.com/api?id=5c5t8poj' type='text/javascript' defer></script>
+<!-- End Neocamino Pixel Code -->
+
+EOD;
+
+}
+

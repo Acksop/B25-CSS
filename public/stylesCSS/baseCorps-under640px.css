@@ -1,0 +1,83 @@
+@media ( max-width: 640px ){
+
+
+	video{
+		max-width: 400px;
+	}
+	.B25-alert {
+		height: 205px;
+		padding-top: 2rem !important;
+	}
+	.permanent-gueuloir{
+		display:block;
+		padding: 2%;
+		width: 100%;
+		margin: 50px 0px;
+	}
+
+	.permanent-table{
+		display:block;
+		margin: auto !important;
+		padding: 0px;
+		width: 320px !important;
+	}
+
+	div.conteneurGrandArticle {
+		display: block;
+		column-width: auto;
+		width: auto;
+		padding: 0px;
+	}
+	div.conteneurArticle { 
+		display: block;
+		width: 100%;
+		margin: 2px;
+	}
+	
+	.image-descriptive-association{
+		width: 100%;
+		height: auto;
+	}
+	.image-mur-artiste, image-tabloid-artiste{
+		width: 75%;
+		height: auto;
+	}
+	.bloc_murUtilisateur{
+		left: 5px;
+	}
+	iframe, #mymovie{
+		width: 95%;
+		height: auto;
+	}
+	
+	#bloc_sonore{
+		position: relative;
+		clear: both;
+		display: block;
+		right: 150px;;
+		left: 25px;
+		margin-bottom: 15px;
+		
+	}
+	
+	#bloc_image{
+		
+	}
+	ul.preferences{
+		width: 300px;
+		margin: 0px !important;
+	}
+	.btn_box li {
+		width: 275px;
+	}
+	div.conteneurGrand {
+		width: 100%;
+	}
+	.btn_box-titre {
+		font-size: 1.2em;
+		line-height: 2.5em;
+	}
+	#TweetTXT{
+		width:100%;
+	}
+}

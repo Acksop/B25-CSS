@@ -5,3 +5,30 @@ $header_description = "Les diff&eacute;rents affichages du Besan&ccedil;on 25 ";
 $header_identifier_url = "besancon25.fr/preferences";
 $header_keywords = "Besan&ccedil;on, Besancon, 25000, 25, preferences, preferences, IHM, Interface Homme Machine, affichage, graphisme";
 
+
+function estInactifOuPas($val)
+{
+    if ($val == 0) {
+        return "disabled";
+    } else {
+        return "";
+    }
+}
+
+function estCocherOuPas($val)
+{
+    if ($val == 1) {
+        return "checked";
+    } else {
+        return "";
+    }
+}
+
+function estEnLectureSeuleOuPas($val)
+{
+    if ($val == 0) {
+        return "readonly";
+    } else {
+        return "";
+    }
+}

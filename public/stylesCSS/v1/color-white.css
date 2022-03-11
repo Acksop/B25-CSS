@@ -1,0 +1,267 @@
+body{
+	background-color: white !important;
+	color: black !important;
+}
+div.piedDePage{
+	background-color: whitesmoke;
+}
+.contenuEnCadre{
+	background-color: whitesmoke;
+}
+.bg-overlay {
+	background: rgba(0, 0, 0, 0.5) !important;
+	opacity: 0.25 !important;
+}
+a{
+	color: darkslategray !important;
+}
+a:visited{
+	color: darkorchid !important;
+}
+section {
+	background-color: white !important;
+}
+.background-white{
+	background-color: white !important;
+}
+.background-black{
+	background-color: black !important;
+}
+
+.menu-icone > i{
+	color: white;
+}
+.menu-titre{
+	color: black;
+}
+.menu-titre{
+	color: black;
+}
+.sousmenu-titre, .sousmenu-titre > a:visited{
+	color: black !important;
+}
+.sousmenu-icone{
+	color: white;
+}
+.B25-alert{
+	background-color: black;
+	color: darkblue;
+}
+.btn_cookie{
+	border: 1px solid black;
+	background-color: black;
+	color: darkblue;
+}
+.btn_cookie:hover{
+	background-color: lightgrey;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+	border: #000000 0px solid;
+}
+
+.B25-alert{
+	color: darkblue;
+}
+.btn_cookie{
+	color: darkblue;
+}
+.btn_cookie:hover{
+	background-color: lightgrey;
+}
+
+img{
+	border: #000000 0px solid;
+}
+.B25-cadre{
+	background-color: rgba( 255,255,255, 0.8);
+}
+.B25-cadre-inverse{
+	background-color: rgba( 255,250,240, 0.8);
+	border-color: gray;
+}
+.tweet{
+	border: 1px solid black;
+}
+.tweetReset{
+	color: red;
+}
+.tweetReset:hover{
+	background-color: beige;
+}
+.btn_modif{
+	border: 1px solid black;
+}
+.btn_modif_preferences{
+	border: 1px solid black;
+}
+.btn_dossiers{
+	border: 1px solid black;
+	
+}
+input[type="radio"].preferences-radio:checked + label{
+    border: 10px solid darkgrey;
+}
+
+input[type="radio"].preferences-text + label {
+    border: 10px solid floralwhite;
+}
+input[type="radio"].preferences-text:checked + label{
+    border: 10px solid darkgrey;
+}
+input[type="radio"].preferences-taille + label {
+    border: 10px solid floralwhite;
+}
+
+/*PROPRIETES DES CONTENEURS*/
+
+div.conteneurArticle h2.legende{
+	color: black;
+	background-color: floralwhite;
+}
+div.conteneurArticleInterieur{
+	background-color: floralwhite;
+}
+div.conteneurAlbumInterieur{
+	background-color: floralwhite;
+	border: 1px solid floralwhite;
+}
+div.conteneurGrand h2.legende{
+	border-color: antiquewhite;
+	color: black;
+	background-color: floralwhite;
+}
+div.conteneurGrandInterieur{
+	background-color: floralwhite;
+	border: 1px solid antiquewhite;
+}
+div.conteneurGrandInterieur h3.legende{
+	color: black;
+	background-color: floralwhite;
+}
+div.conteneur{
+	border: 1px dotted antiquewhite;
+}
+div.conteneur h2.legende{
+	color: black;
+	background-color: floralwhite;
+}
+div.conteneurInterieur{
+	background-color: floralwhite;
+}
+div.conteneurInterieur h3.legende{
+	color: black;
+	background-color: floralwhite;
+}
+div.conteneurPetit h2.legende{
+	color: black;
+	background-color: floralwhite;
+}
+div.conteneurPetitInterieur{
+	background-color: floralwhite;
+	border: 1px solid antiquewhite;
+}
+div.conteneurPetitInterieur h3.legende{
+	color: black;
+	background-color: floralwhite;
+}
+
+.utilisateurs{
+	border: 1px dotted antiquewhite;
+	background-color: floralwhite;
+}
+.utilisateursInverse{
+	border: 1px dotted navajowhite;
+	background-color: antiquewhite;
+}
+.bloc_murUtilisateur{
+	background-color: floralwhite;
+	border: 1px dotted antiquewhite;
+}
+
+
+
+/*PROPRIETES DES ECRITURES*/
+
+h1.utilisateurs{
+	background-color: floralwhite;
+}
+h2.utilisateurs{
+	background-color: floralwhite;
+}
+h3.utilisateurs{;
+	background-color: floralwhite;
+}
+h1.utilisateursInverse{
+	background-color: floralwhite;
+}
+h2.utilisateursInverse{
+	background-color: floralwhite;
+}
+h3.utilisateursInverse{
+	background-color: floralwhite;
+}
+a.lien_back:hover{
+	color:lightblue;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+}
+table.utilisateurs td{
+	border: 1px dotted antiquewhite;
+	background-color: floralwhite;
+}
+td.titreTableau{
+	border: 1px solid antiquewhite;
+	background-color: floralwhite;
+}
+
+td.utilisateurs{
+	border: 1px dotted antiquewhite;
+	background-color: floralwhite;
+}
+td.utilisateursInverse{
+	border: 1px dotted antiquewhite;
+	background-color: floralwhite;
+}
+td.ecriture{
+	border: 1px dotted antiquewhite;
+	background-color: floralwhite;
+}
+td.ecritureInverse{
+	border: 1px dotted antiquewhite;
+	background-color: floralwhite;
+}
+td.gris{
+	background-color: floralwhite;
+}
+td.fondgris{
+	background-color: floralwhite;
+}
+td.breves{
+	background-color: floralwhite;
+}
+td.breve{
+	border: 1px solid antiquewhite;
+	background-color: floralwhite;
+}
+
+p.utilisateurs{
+	border: 1px dotted antiquewhite;
+	background-color: floralwhite;
+}
+p.lettrineInverse:first-letter {
+	background-color: floralwhite;
+	color: black;
+}
+span.fluo{ background:#ffff00; }
+
+
+ul.preferences{
+	border: 1px solid antiquewhite;
+	background-color: floralwhite;
+}
+.form-control {
+	color: #212529;
+}

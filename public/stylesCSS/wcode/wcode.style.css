@@ -1,0 +1,69 @@
+  img { border: #000000 0px solid; }
+  div.declaration_apercu {
+          font-family: Tahoma;
+          font-color: #000000;
+          font-size: 12px;
+  }
+
+  div.declaration_apercu span.gras { font-weight: bold; }
+  div.declaration_apercu span.italique {font-style: italic; }
+  div.declaration_apercu span.souligne {text-decoration: underline; }
+  div.declaration_apercu span.fluo{ background:#ffff00; }
+
+  div.declaration_apercu p.gauche { text-align: left; }
+  div.declaration_apercu p.centre { text-align: center; }
+  div.declaration_apercu p.droite { text-align: right; }
+  div.declaration_apercu p.justifier { text-align: justify; }
+
+  div.declaration_apercu img.cliquable { cursor: pointer; }
+
+  .cachediv { display: none; }
+
+  div.declaration_apercu div.zone_code {
+        background: #ddddee;
+        border: 0px;
+        border: #8888bb 1px solid;
+  }
+
+  div.declaration_apercu div.zone_citation {
+        background: #ddddee;
+        border: 0px;
+        border: #8888bb 1px solid;
+  }
+
+  div.declaration_apercu ul{
+  	list-style-position: inside;
+  	padding:0 0 0 0;
+	margin: 3px 0px 3px 10px;
+  }
+
+  div.declaration_apercu ul.normal{ list-style-type: disc; }
+  div.declaration_apercu ul.numeros{ list-style-type: decimal; }
+  div.declaration_apercu ul.lettres{ list-style-type: lower-alpha; }
+
+  div.declaration_apercu div.citation{
+          margin: 5px;
+          text-align: left;
+          background: #ffffff;
+          border: #def 1px solid;
+          border-left: #89a 3px solid;
+          padding-left: 5px;
+  }
+
+  div.declaration_apercu div.contenu_citation{
+          background: #ffffff;
+          border: 0px;
+          border: #8888bb 1px solid;
+          padding: 5px;
+  }
+
+  div.declaration_apercu pre{
+  	font-size: 12px;
+  	font-family: Courier New;
+  	margin: 0px;
+  	text-align: left;
+  	background: #ffffff;
+  	border: 0px;
+        border: #8888bb 1px solid;
+        padding: 5px;
+  }

@@ -1,0 +1,45 @@
+var hero      = $('#hero');
+
+var backgrounds = [
+    { src: 'images/slider/brouillard-1.gif', valign: 'top' },
+    { src: 'images/slider/brouillard-2.gif', valign: 'top' },
+    { src: 'images/slider/brouillard-3.gif', valign: 'top' },
+    { src: 'images/slider/img_calm_00.gif', valign: 'top' },
+    { src: 'images/slider/img_calm_01.gif', valign: 'top' },
+    { src: 'images/slider/img_calm_02.gif', valign: 'top' },
+    { src: 'images/slider/img_calm_03.gif', valign: 'top' },
+    { src: 'images/slider/img_calm_04.gif', valign: 'top' },
+    { src: 'images/slider/img_calm_05.gif', valign: 'top' },
+    { src: 'images/slider/img_calm_06.gif', valign: 'top' },
+    { src: 'images/slider/img_calm_07.gif', valign: 'top' },
+    { src: 'images/slider/img_calm_08.gif', valign: 'top' },
+    { src: 'images/slider/img_calm_09.gif', valign: 'top' },
+    { src: 'images/slider/img_calm_10.gif', valign: 'top' },
+    { src: 'images/slider/nuages-00.gif', valign: 'top' },
+    { src: 'images/slider/nuages-01.gif', valign: 'top' },
+    { src: 'images/slider/photo-707.gif', valign: 'top' },
+    { src: 'images/slider/photo-708.gif', valign: 'top' },
+    { src: 'images/slider/printemps.gif', valign: 'top' },
+    { src: 'images/slider/printemps-2.gif', valign: 'top' },
+    { src: 'images/slider/printemps-3.gif', valign: 'top' },
+    { src: 'images/slider/printemps-4.gif', valign: 'top' },
+    { src: 'images/slider/printemps-5.gif', valign: 'top' },
+    { src: 'images/slider/vid01sec.gif', valign: 'top' },
+    { src: 'images/slider/vid02sec.gif', valign: 'top' },
+    { src: 'images/slider/vid03sec.gif', valign: 'top' },
+    { src: 'images/slider/vid04sec.gif', valign: 'top' },
+    { src: 'images/slider/vid05sec.gif', valign: 'top' },
+    { src: 'images/slider/vid06sec.gif', valign: 'top' },
+    { src: 'images/slider/vid07sec.gif', valign: 'top' },
+    { src: 'images/slider/vid08sec.gif', valign: 'top' },
+    { src: 'images/slider/vid-lesfeuilles1.gif', valign: 'top' },
+    { src: 'images/slider/vid-lesfeuilles2.gif', valign: 'top' },
+];
+
+hero.vegas({
+    preload: true,
+    overlay: 'vendor/vegas/overlays/01.png',
+    transitionDuration: 4000,
+    delay: 10000,
+    slides: backgrounds
+});
