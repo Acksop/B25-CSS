@@ -72,10 +72,6 @@ EOD;
 		
 		<div id='contenu' class='contenu'>
 
-            <?php
-            include dirname(__DIR__) . '/add-ons/entertainement_adsense.phtml';
-            ?>
-
 			<?php
 
             $notAtable = TRUE;

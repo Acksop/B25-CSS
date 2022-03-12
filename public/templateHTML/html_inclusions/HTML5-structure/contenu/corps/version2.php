@@ -10,9 +10,6 @@
 		<div style='display:table; width:100%;'>
 		<div id='contenu' class='contenu'>
 
-            <?php
-                include dirname(__DIR__) . '/add-ons/entertainement_adsense.phtml';
-            ?>
 
 	    <?php $debut_pic_memoire = memory_get_peak_usage();?>
 		

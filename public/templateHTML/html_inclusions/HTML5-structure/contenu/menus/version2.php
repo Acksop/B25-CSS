@@ -1,7 +1,6 @@
 <?php
 
 	$couleur = recuperationCouleurInterface();
-	//echo $couleur;
 	$tabCouleur = array("#663333","#FE642E","#B45F04","#FFBF00","#F3F781","#4B610B"
 										,"#5FB404","#31B404","#81F79F","#088A4B","#00FFBF","#58FAF4"
 										,"#01A9DB","#81BEF7","#013ADF","#0B0B61","#8258FA","#4B088A"
@@ -79,10 +78,7 @@ EOF;
 
 
     echo "<div id='en-tete' class='entete' style='background-color:".$tabCouleur[$couleur]."'>";
-		
-	/**Bandeau UKRAINE-RUSSIE GUERRE 2022*/
-    //echo "<div class='bandeau-guerre-2022' style='position: absolute; display: block; z-index: 0; witdh: 100%; right: 0px; top: 0px;'><img alt='bandeau guerre ukraine' src='/images/Hors-serie/calque-ukraine-2022.png' width='100%'/></div>";
-    /**FIN Bandeau UKRAINE-RUSSIE GUERRE 2022*/
+
 	
 	echo "<div class='logoMenu'>";
 	echo "\n	<center>"
@@ -168,10 +164,6 @@ EOF;
 	if( !$mobile ){
 		echo 	"<li><a id=\"signalement\"><img alt='bouton de signalement' src='/images/btn_signalement.png' width='16' height='16'></a><a href='".link_rewrite('FluxRSS',false,"",array('flux'=>'RSS'))."'><img alt='accès flux rss' src='/images/feed-icon-16x16.png'></a>&nbsp;&nbsp;<span id='HeureDate'>".AfficheDate()."</span>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;";
 	}
-
-    include dirname(__DIR__) . '/add-ons/translation_internationale.phtml';
-
-    include dirname(__DIR__) . '/add-ons/socials_tracers.phtml';
 
 	echo "</li></ul>";
 	echo "</div>";

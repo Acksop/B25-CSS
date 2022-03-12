@@ -5,10 +5,6 @@
 
 		<div id='contenu' class='contenu' style=' display:table; margin-top:20px; width:100%;'>
 
-            <?php
-            include dirname(__DIR__) . '/add-ons/entertainement_adsense.phtml';
-            ?>
-
 			<?php
             $notAtable = TRUE;
             /*if(isset($this->page) && $this->page !== 'index'){

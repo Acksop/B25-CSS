@@ -29,7 +29,6 @@ if(isset($_COOKIE['fondIHM'])){
 }else{
     echo "<div class='imagebd'><img name='fond_interface' src='/images/fondbd.gif' width='1024' height='768' /></div>";
 }
-//AfficheHrSandBoxLimiteur();
 
 
 
@@ -181,10 +180,6 @@ function AfficheSousMenuV4(){
 
     echo "<span style='float:right;'><a id=\"signalement\" style='top: -1px;position: relative;width:25px;' href='#'><img alt='bouton de signalement' src='/images/btn_signalement.png' width='16' height='16'></a></span>";
 
-
-    include dirname(__DIR__) . '/add-ons/translation_internationale.phtml';
-
-    include dirname(__DIR__) . '/add-ons/socials_tracers.phtml';
 
     /*if(!$mobile) {
         echo "</span>";

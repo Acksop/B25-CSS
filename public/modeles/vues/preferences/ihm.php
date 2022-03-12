@@ -1,5 +1,12 @@
 <?php
 
+if (!estActifOuPasDoNotTrackHeader()
+        &&
+        (isset($_COOKIE['CookieApp_CF']) && $_COOKIE['CookieApp_CF'] == 1)
+        &&
+        (isset($_COOKIE['CookieApp_CF_IHM']) && $_COOKIE['CookieApp_CF_IHM'] == 1)
+    ) {
+
     //fonction permettant de récupérer la version de l'interface active...
     $version = recuperationCookieVersionInterface();
     //tableau contenant toutes les couleurs de l'interface:
@@ -218,3 +225,5 @@
             ."</left>"
 
             ."</div>";
+			
+}

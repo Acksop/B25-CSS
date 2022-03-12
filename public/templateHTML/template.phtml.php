@@ -21,8 +21,6 @@ echo <<<EOD
 
 EOD;
 
-include PUBLIC_PATH . DIRECTORY_SEPARATOR . 'templateHTML/html_inclusions/cookies_alert.phtml';
-
 include PUBLIC_PATH . DIRECTORY_SEPARATOR . 'templateHTML/html_inclusions/body_contenu.phtml';
 
 include PUBLIC_PATH . DIRECTORY_SEPARATOR . 'templateHTML/html_inclusions/footer_piedDePage.phtml';

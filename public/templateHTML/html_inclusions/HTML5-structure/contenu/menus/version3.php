@@ -9,10 +9,6 @@ $tabCouleur = array("#663333","#FE642E","#B45F04","#FFBF00","#F3F781","#4B610B"
 
 echo "<header id='en-tete' style='background-color:".$tabCouleur[$couleur]."' >";
 
-/**Bandeau UKRAINE-RUSSIE GUERRE 2022*/
-//echo "<div class='bandeau-guerre-2022' style='position: absolute; display: block; z-index: 3; witdh: 100%; right: -680px; top: 130px;'><img alt='bandeau guerre ukraine' src='/images/Hors-serie/calque-ukraine-2022_1.png' width='50%'/></div>";
-/**FIN Bandeau UKRAINE-RUSSIE GUERRE 2022*/
-
 AfficheIcone();
 echo "</header>";
 if(isset($_COOKIE['fondIHM'])){
@@ -247,10 +243,6 @@ echo "\n<div id='sous-menu' class='boutonsSousmenu'>";
 		."</a>";
 
 	}
-
-    include dirname(__DIR__) . '/add-ons/translation_internationale.phtml';
-
-    include dirname(__DIR__) . '/add-ons/socials_tracers.phtml';
 
     /*if(!$mobile) {
         echo "</span>";
